@@ -19,7 +19,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Nttps\\MetronicTheme\\NttpsAuthServiceProvider"
+                "Nttps\\MetronicTheme\\MetronicServiceProvider"
             ],
             "aliases": {
                 "Metronic": "Nttps\\MetronicTheme\\Theme\\Metronic",
