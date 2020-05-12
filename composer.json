@@ -7,7 +7,6 @@
             "email": "teamerze@gmail.com"
         }
     ],
-    "minimum-stability": "dev",
     "require": {},
     "autoload": {
         "files": [
