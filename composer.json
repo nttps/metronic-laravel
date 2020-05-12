@@ -1,6 +1,7 @@
 {
     "name": "nttps/metronic-theme",
     "description": "Package Laravel Metronic",
+    "license": "MIT",
     "authors": [
         {
             "name": "NTTPS",
