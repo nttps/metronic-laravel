@@ -258,7 +258,7 @@ return [
 
     // Demo Assets
     'resources' => [
-        'favicon' => 'media/img/logo/favicon.ico',
+        'favicon' => 'vendor/metronic/media/img/logo/favicon.ico',
         'fonts' => [
             'google' => [
                 'families' => [
