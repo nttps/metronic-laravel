@@ -267,14 +267,14 @@ return [
             ]
         ],
         'css' => [
-            'vendor/plugins/global/plugins.bundle.css',
-            'vendor/plugins/custom/prismjs/prismjs.bundle.css',
-            'vendor/css/style.bundle.css',
+            'vendor/metronic/plugins/global/plugins.bundle.css',
+            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.css',
+            'vendor/metronic/css/style.bundle.css',
         ],
         'js' => [
-            'vendor/plugins/global/plugins.bundle.js',
-            'vendor/plugins/custom/prismjs/prismjs.bundle.js',
-            'vendor/js/scripts.bundle.js',
+            'vendor/metronic/plugins/global/plugins.bundle.js',
+            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.js',
+            'vendor/metronic/js/scripts.bundle.js',
         ],
     ],
 
