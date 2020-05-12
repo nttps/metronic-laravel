@@ -32,18 +32,18 @@ class MetronicServiceProvider extends ServiceProvider
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'metronic');
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/metronic'),
-        ]);
+        ] , 'metronic_view');
         $this->loadRoutesFrom(__DIR__.'/../routes/metronic.php');
 
         $this->publishes([
             __DIR__.'/../config/layout.php' => config_path('layout.php'),
             __DIR__.'/../config/menu_aside.php' => config_path('menu_aside.php'),
             __DIR__.'/../config/menu_header.php' => config_path('menu_header.php'),
-        ], 'config');
+        ], 'metronic_config');
 
         $this->publishes([
             __DIR__.'/../public' => public_path('vendor/metronic'),
-        ], 'public');
+        ], 'metronic_public');
 
     }
 }
