@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 528);
+/******/ 	return __webpack_require__(__webpack_require__.s = 542);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -113,22 +113,23 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 528:
+/***/ 542:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(529);
+module.exports = __webpack_require__(543);
 
 
 /***/ }),
 
-/***/ 529:
+/***/ 543:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(530);
+// jKanban Board - Vanilla Javascript plugin for manage kanban boards: https://github.com/riktar/jkanban
+__webpack_require__(544);
 
 /***/ }),
 
-/***/ 530:
+/***/ 544:
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var require;var require;(function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return require(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){

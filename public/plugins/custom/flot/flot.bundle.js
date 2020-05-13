@@ -81,39 +81,40 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 495);
+/******/ 	return __webpack_require__(__webpack_require__.s = 509);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 495:
+/***/ 509:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(496);
+module.exports = __webpack_require__(510);
 
 
 /***/ }),
 
-/***/ 496:
+/***/ 510:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(497);
+// Flot- Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks and interactive features: https://www.flotcharts.org/
+__webpack_require__(511);
 
-__webpack_require__(498);
+__webpack_require__(512);
 
-__webpack_require__(499);
+__webpack_require__(513);
 
-__webpack_require__(500);
+__webpack_require__(514);
 
-__webpack_require__(501);
+__webpack_require__(515);
 
-__webpack_require__(502);
+__webpack_require__(516);
 
-__webpack_require__(503);
+__webpack_require__(517);
 
 /***/ }),
 
-/***/ 497:
+/***/ 511:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -123,7 +124,7 @@ function _typeof(t){return(_typeof="function"==typeof Symbol&&"symbol"==typeof S
 
 /***/ }),
 
-/***/ 498:
+/***/ 512:
 /***/ (function(module, exports) {
 
 /* eslint-disable */
@@ -190,7 +191,7 @@ can just fix the size of their placeholders.
 
 /***/ }),
 
-/***/ 499:
+/***/ 513:
 /***/ (function(module, exports) {
 
 /* Flot plugin for plotting textual data or categories.
@@ -399,7 +400,7 @@ as "categories" on the axis object, e.g. plot.getAxes().xaxis.categories.
 
 /***/ }),
 
-/***/ 500:
+/***/ 514:
 /***/ (function(module, exports) {
 
 /* Flot plugin for rendering pie charts.
@@ -1192,7 +1193,7 @@ More detail and specific examples can be found in the included HTML file.
 
 /***/ }),
 
-/***/ 501:
+/***/ 515:
 /***/ (function(module, exports) {
 
 /* Flot plugin for stacking data sets rather than overlaying them.
@@ -1419,7 +1420,7 @@ charts or filled areas).
 
 /***/ }),
 
-/***/ 502:
+/***/ 516:
 /***/ (function(module, exports) {
 
 /* Flot plugin for showing crosshairs when the mouse hovers over the plot.
@@ -1628,7 +1629,7 @@ The plugin also adds four public methods:
 
 /***/ }),
 
-/***/ 503:
+/***/ 517:
 /***/ (function(module, exports) {
 
 /*

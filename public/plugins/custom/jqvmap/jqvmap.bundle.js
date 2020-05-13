@@ -81,37 +81,38 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 517);
+/******/ 	return __webpack_require__(__webpack_require__.s = 531);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 517:
+/***/ 531:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(518);
+module.exports = __webpack_require__(532);
 
 
 /***/ }),
 
-/***/ 518:
+/***/ 532:
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(519);
+// JQVMap - JQVMap is a jQuery plugin that renders Interactive, Clickable Vector Maps: https://github.com/10bestdesign/jqvmap/
+__webpack_require__(533);
 
-__webpack_require__(520);
+__webpack_require__(534);
 
-__webpack_require__(521);
+__webpack_require__(535);
 
-__webpack_require__(522);
+__webpack_require__(536);
 
-__webpack_require__(523);
+__webpack_require__(537);
 
-__webpack_require__(524);
+__webpack_require__(538);
 
 /***/ }),
 
-/***/ 519:
+/***/ 533:
 /***/ (function(module, exports) {
 
 /*!
@@ -1399,7 +1400,7 @@ VectorCanvas.prototype.setSize = function (width, height) {
 
 /***/ }),
 
-/***/ 520:
+/***/ 534:
 /***/ (function(module, exports) {
 
 /** Add World Map Data Points */
@@ -1408,7 +1409,7 @@ jQuery.fn.vectorMap('addMap', 'world_en', {"width":950,"height":550,"paths":{"id
 
 /***/ }),
 
-/***/ 521:
+/***/ 535:
 /***/ (function(module, exports) {
 
 /** Add Russia Map Data Points */
@@ -1417,7 +1418,7 @@ jQuery.fn.vectorMap('addMap','russia_en',{"width":959,"height":593,"paths":{"da"
 
 /***/ }),
 
-/***/ 522:
+/***/ 536:
 /***/ (function(module, exports) {
 
 /** Add USA Map Data Points */
@@ -1426,7 +1427,7 @@ jQuery.fn.vectorMap('addMap', 'usa_en', {"width":959,"height":593,"paths":{"hi":
 
 /***/ }),
 
-/***/ 523:
+/***/ 537:
 /***/ (function(module, exports) {
 
 /** Add Germany Map Data Points */
@@ -1435,7 +1436,7 @@ jQuery.fn.vectorMap('addMap', 'germany_en', {"width":592,"height":801,"paths":{"
 
 /***/ }),
 
-/***/ 524:
+/***/ 538:
 /***/ (function(module, exports) {
 
 /** Add Europe Map Data Points */

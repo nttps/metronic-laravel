@@ -81,32 +81,33 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 504);
+/******/ 	return __webpack_require__(__webpack_require__.s = 518);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 504:
+/***/ 518:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(505);
+module.exports = __webpack_require__(519);
 
 
 /***/ }),
 
-/***/ 505:
+/***/ 519:
 /***/ (function(module, exports, __webpack_require__) {
 
-window.FullCalendar = __webpack_require__(506);
-window.FullCalendarDayGrid = __webpack_require__(507);
-window.FullCalendarGoogleCalendar = __webpack_require__(509);
-window.FullCalendarInteraction = __webpack_require__(510);
-window.FullCalendarList = __webpack_require__(511);
-window.FullCalendarTimeGrid = __webpack_require__(512);
+// FullCalendar - Full-sized, drag & drop event calendar in JavaScript: https://fullcalendar.io/
+window.FullCalendar = __webpack_require__(520);
+window.FullCalendarDayGrid = __webpack_require__(521);
+window.FullCalendarGoogleCalendar = __webpack_require__(523);
+window.FullCalendarInteraction = __webpack_require__(524);
+window.FullCalendarList = __webpack_require__(525);
+window.FullCalendarTimeGrid = __webpack_require__(526);
 
 /***/ }),
 
-/***/ 506:
+/***/ 520:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -8852,7 +8853,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 507:
+/***/ 521:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -8862,7 +8863,7 @@ Docs & License: https://fullcalendar.io/
 */
 
 (function (global, factory) {
-     true ? factory(exports, __webpack_require__(508)) :
+     true ? factory(exports, __webpack_require__(522)) :
     undefined;
 }(this, function (exports, core) { 'use strict';
 
@@ -10526,7 +10527,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 508:
+/***/ 522:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -19266,7 +19267,7 @@ var version = '4.4.0';
 
 /***/ }),
 
-/***/ 509:
+/***/ 523:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -19276,7 +19277,7 @@ Docs & License: https://fullcalendar.io/
 */
 
 (function (global, factory) {
-     true ? factory(exports, __webpack_require__(508)) :
+     true ? factory(exports, __webpack_require__(522)) :
     undefined;
 }(this, function (exports, core) { 'use strict';
 
@@ -19447,7 +19448,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 510:
+/***/ 524:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -19457,7 +19458,7 @@ Docs & License: https://fullcalendar.io/
 */
 
 (function (global, factory) {
-     true ? factory(exports, __webpack_require__(508)) :
+     true ? factory(exports, __webpack_require__(522)) :
     undefined;
 }(this, function (exports, core) { 'use strict';
 
@@ -21605,7 +21606,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 511:
+/***/ 525:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -21615,7 +21616,7 @@ Docs & License: https://fullcalendar.io/
 */
 
 (function (global, factory) {
-     true ? factory(exports, __webpack_require__(508)) :
+     true ? factory(exports, __webpack_require__(522)) :
     undefined;
 }(this, function (exports, core) { 'use strict';
 
@@ -21967,7 +21968,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 512:
+/***/ 526:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -21977,7 +21978,7 @@ Docs & License: https://fullcalendar.io/
 */
 
 (function (global, factory) {
-     true ? factory(exports, __webpack_require__(508), __webpack_require__(513)) :
+     true ? factory(exports, __webpack_require__(522), __webpack_require__(527)) :
     undefined;
 }(this, function (exports, core, daygrid) { 'use strict';
 
@@ -23374,7 +23375,7 @@ Docs & License: https://fullcalendar.io/
 
 /***/ }),
 
-/***/ 513:
+/***/ 527:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23386,7 +23387,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DayGridView", function() { return DayGridView; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SimpleDayGrid", function() { return SimpleDayGrid; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "buildBasicDayTable", function() { return buildDayTable; });
-/* harmony import */ var _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(508);
+/* harmony import */ var _fullcalendar_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(522);
 /*!
 FullCalendar Day Grid Plugin v4.4.0
 Docs & License: https://fullcalendar.io/

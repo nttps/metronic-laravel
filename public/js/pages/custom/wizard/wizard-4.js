@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 763);
+/******/ 	return __webpack_require__(__webpack_require__.s = 777);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 763:
+/***/ 777:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(764);
+module.exports = __webpack_require__(778);
 
 
 /***/ }),
 
-/***/ 764:
+/***/ 778:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -126,12 +126,14 @@ var KTWizard4 = function () {
 
           KTUtil.scrollTop();
         } else {
-          swal.fire({
+          Swal.fire({
             text: "Sorry, looks like there are some errors detected, please try again.",
             icon: "error",
             buttonsStyling: false,
             confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light"
+            customClass: {
+              confirmButton: "btn font-weight-bold btn-light"
+            }
           }).then(function () {
             KTUtil.scrollTop();
           });
@@ -149,6 +151,7 @@ var KTWizard4 = function () {
   };
 
   var initValidation = function initValidation() {
+    // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
     // Step 1
     _validations.push(FormValidation.formValidation(_formEl, {
       fields: {

@@ -81,12 +81,12 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 448);
+/******/ 	return __webpack_require__(__webpack_require__.s = 462);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 438:
+/***/ 452:
 /***/ (function(module, exports, __webpack_require__) {
 
 /*!
@@ -98,19 +98,20 @@
 
 /***/ }),
 
-/***/ 448:
+/***/ 462:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(449);
+module.exports = __webpack_require__(463);
 
 
 /***/ }),
 
-/***/ 449:
+/***/ 463:
 /***/ (function(module, exports, __webpack_require__) {
 
+// CKEditor  - Rock-solid, free WYSIWYG editor with collaborative editing, 200+ features, full documentation and support: https://ckeditor.com/
 // CKEditor Inline
-window.InlineEditor = __webpack_require__(438);
+window.InlineEditor = __webpack_require__(452);
 
 /***/ })
 

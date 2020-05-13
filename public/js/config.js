@@ -56,5 +56,5 @@ var KTAppSettings = {
             "gray-900": "#212121"
         }
     },
-    "font-family": "Poppins"
+    "font-family": "Kanit"
 };

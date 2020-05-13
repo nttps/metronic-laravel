@@ -81,7 +81,7 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 525);
+/******/ 	return __webpack_require__(__webpack_require__.s = 539);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -17872,27 +17872,28 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 525:
+/***/ 539:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(526);
+module.exports = __webpack_require__(540);
 
 
 /***/ }),
 
-/***/ 526:
+/***/ 540:
 /***/ (function(module, exports, __webpack_require__) {
 
+// jsTree - is jquery plugin, that provides interactive trees: https://www.jstree.com/
 // jquery
 window.jQuery = window.$ = __webpack_require__(2); // bootstrap
 
 __webpack_require__(3);
 
-__webpack_require__(527);
+__webpack_require__(541);
 
 /***/ }),
 
-/***/ 527:
+/***/ 541:
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*globals jQuery, define, module, exports, require, window, document, postMessage */

@@ -81,20 +81,20 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 691);
+/******/ 	return __webpack_require__(__webpack_require__.s = 705);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 691:
+/***/ 705:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(692);
+module.exports = __webpack_require__(706);
 
 
 /***/ }),
 
-/***/ 692:
+/***/ 706:
 /***/ (function(module, exports) {
 
 // Class definition
@@ -153,6 +153,12 @@ var KTTagifyDemos = function () {
     function onDropdownHide(e) {
       console.log("onDropdownHide: ", e.detail);
     }
+  };
+
+  var demo1Readonly = function demo1Readonly() {
+    // Readonly Mode
+    var input = document.getElementById('kt_tagify_1_1'),
+        tagify = new Tagify(input);
   };
 
   var demo2 = function demo2() {
@@ -310,6 +316,7 @@ var KTTagifyDemos = function () {
     // public functions
     init: function init() {
       demo1();
+      demo1Readonly();
       demo2();
       demo3();
       demo4();
