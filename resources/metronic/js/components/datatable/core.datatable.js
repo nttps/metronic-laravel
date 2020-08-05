@@ -1392,12 +1392,16 @@
 						Plugin.dataRender();
 					},
 					populate: function() {
+						datatable.dataSet = datatable.dataSet || [];
+						// no records available
+						if (datatable.dataSet.length === 0) return;
+
 						var icons = Plugin.getOption('layout.icons.pagination');
 						var title = Plugin.getOption('translate.toolbar.pagination.items.default');
 						// pager root element
 						pg.pager = $('<div/>').addClass(pfx + 'datatable-pager ' + pfx + 'datatable-paging-loaded');
 						// numbering links
-						var pagerNumber = $('<ul/>').addClass(pfx + 'datatable-pager-nav');
+						var pagerNumber = $('<ul/>').addClass(pfx + 'datatable-pager-nav mb-5 mb-sm-0');
 						pg.pagerLayout['pagination'] = pagerNumber;
 
 						// pager first/previous button
@@ -2419,7 +2423,9 @@
 
 						var column = Plugin.getColumnByField(meta.field);
 						// sort is disabled for this column
-						if (typeof column !== 'undefined' && typeof column.sortable !== 'undefined' && column.sortable === false) return;
+						if (typeof column === 'undefined') return;
+						if (typeof column.sortable !== 'undefined' && column.sortable === false) return;
+						if (typeof column.selector !== 'undefined' && column.selector === true) return;
 
 						// sort icon beside column header
 						var td = $(datatable.tableHead).find('.' + pfx + 'datatable-cell[data-field="' + meta.field + '"]').attr('data-sort', meta.sort);
@@ -2442,7 +2448,9 @@
 						var field = $(this).data('field');
 						var column = Plugin.getColumnByField(field);
 						// sort is disabled for this column
+						if (typeof column === 'undefined') return;
 						if (typeof column.sortable !== 'undefined' && column.sortable === false) return;
+						if (typeof column.selector !== 'undefined' && column.selector === true) return;
 
 						// set sorted class to header
 						$(datatable.tableHead).find('th').removeClass(pfx + 'datatable-cell-sorted');
@@ -2865,7 +2873,28 @@
 				datatable = initialDatatable;
 				$(datatable).trigger(pfx + 'datatable-on-destroy');
 				Plugin.isInit = false;
+
+				// clean up variables
 				initialDatatable = null;
+				datatable.dataSet = null;
+				datatable.originalDataSet = null;
+				datatable.tableHead = null;
+				datatable.tableBody = null;
+				datatable.table = null;
+				datatable.wrap = null;
+				datatable.API = {
+					record: null,
+					value: null,
+					params: null,
+				};
+
+				Plugin.ajaxParams = {};
+				Plugin.pagingObject = {};
+				Plugin.nodeTr = [];
+				Plugin.nodeTd = [];
+				Plugin.nodeCols = [];
+				Plugin.recentNode = [];
+
 				return initialDatatable;
 			},
 

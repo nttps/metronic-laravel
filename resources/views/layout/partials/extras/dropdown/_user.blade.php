@@ -1,4 +1,4 @@
-@if (config('layout.extras.user.dropdown.style') == 'light')
+@if (config('layout', 'extras/user/dropdown/style') == 'light')
     {{-- Header --}}
     <div class="d-flex align-items-center p-8 rounded-top">
         {{-- Symbol --}}

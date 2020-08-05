@@ -24,7 +24,7 @@
                 <div class="input-group">
                     <div class="input-group-prepend">
                         <span class="input-group-text">
-                            {{ Metronic::getSVG("vendor/metronic/media/svg/icons/General/Search.svg", "svg-icon-lg") }}
+                            {{ Metronic::getSVG("media/svg/icons/General/Search.svg", "svg-icon-lg") }}
                         </span>
                     </div>
                     <input type="text" class="form-control " placeholder="Search..."/>
@@ -52,7 +52,7 @@
                         {{-- Item --}}
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 bg-transparent flex-shrink-0">
-                                <img src="{{ asset('vendor/metronic/media/svg/files/doc.svg') }}" alt=""/>
+                                <img src="{{ asset('media/svg/files/doc.svg') }}" alt=""/>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -67,7 +67,7 @@
                         {{-- Item --}}
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 bg-transparent flex-shrink-0">
-                                <img src="{{ asset('vendor/metronic/media/svg/files/pdf.svg') }}" alt=""/>
+                                <img src="{{ asset('media/svg/files/pdf.svg') }}" alt=""/>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -82,7 +82,7 @@
                         {{-- Item --}}
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 bg-transparent flex-shrink-0">
-                                <img src="{{ asset('vendor/metronic/media/svg/files/xml.svg') }}" alt=""/>
+                                <img src="{{ asset('media/svg/files/xml.svg') }}" alt=""/>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -97,7 +97,7 @@
                         {{-- Item --}}
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 bg-transparent flex-shrink-0">
-                                <img src="{{ asset('vendor/metronic/media/svg/files/csv.svg') }}" alt=""/>
+                                <img src="{{ asset('media/svg/files/csv.svg') }}" alt=""/>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -117,7 +117,7 @@
                     <div class="mb-10">
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 flex-shrink-0">
-                                <div class="symbol-label" style="background-image:url('{{ asset('vendor/metronic/media/users/300_20.jpg') }}')"></div>
+                                <div class="symbol-label" style="background-image:url('{{ asset('media/users/300_20.jpg') }}')"></div>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -130,7 +130,7 @@
                         </div>
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 flex-shrink-0">
-                                <div class="symbol-label"  style="background-image:url('{{ asset('vendor/metronic/media/users/300_15.jpg') }}')"></div>
+                                <div class="symbol-label"  style="background-image:url('{{ asset('media/users/300_15.jpg') }}')"></div>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -143,7 +143,7 @@
                         </div>
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 flex-shrink-0">
-                                <div class="symbol-label"  style="background-image:url('{{ asset('vendor/metronic/media/users/300_12.jpg') }}')"></div>
+                                <div class="symbol-label"  style="background-image:url('{{ asset('media/users/300_12.jpg') }}')"></div>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">
@@ -156,7 +156,7 @@
                         </div>
                         <div class="d-flex align-items-center flex-grow-1 mb-2">
                             <div class="symbol symbol-30 flex-shrink-0" >
-                                <div class="symbol-label" style="background-image:url('{{ asset('vendor/metronic/media/users/300_16.jpg') }}')"></div>
+                                <div class="symbol-label" style="background-image:url('{{ asset('media/users/300_16.jpg') }}')"></div>
                             </div>
                             <div class="d-flex flex-column ml-3 mt-2 mb-2">
                                 <a href="#" class="font-weight-bold text-dark text-hover-primary">

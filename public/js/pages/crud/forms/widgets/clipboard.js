@@ -81,46 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 691);
+/******/ 	return __webpack_require__(__webpack_require__.s = 72);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 691:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(692);
-
-
-/***/ }),
-
-/***/ 692:
+/***/ "./resources/metronic/js/pages/crud/forms/widgets/clipboard.js":
+/*!*********************************************************************!*\
+  !*** ./resources/metronic/js/pages/crud/forms/widgets/clipboard.js ***!
+  \*********************************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- // Class definition
+eval(" // Class definition\n\nvar KTClipboardDemo = function () {\n  // Private functions\n  var demos = function demos() {\n    // basic example\n    new ClipboardJS('[data-clipboard=true]').on('success', function (e) {\n      e.clearSelection();\n      alert('Copied!');\n    });\n  };\n\n  return {\n    // public functions\n    init: function init() {\n      demos();\n    }\n  };\n}();\n\njQuery(document).ready(function () {\n  KTClipboardDemo.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvbWV0cm9uaWMvanMvcGFnZXMvY3J1ZC9mb3Jtcy93aWRnZXRzL2NsaXBib2FyZC5qcz8yOWEzIl0sIm5hbWVzIjpbIktUQ2xpcGJvYXJkRGVtbyIsImRlbW9zIiwiQ2xpcGJvYXJkSlMiLCJvbiIsImUiLCJjbGVhclNlbGVjdGlvbiIsImFsZXJ0IiwiaW5pdCIsImpRdWVyeSIsImRvY3VtZW50IiwicmVhZHkiXSwibWFwcGluZ3MiOiJDQUNBOztBQUVBLElBQUlBLGVBQWUsR0FBRyxZQUFZO0FBRTlCO0FBQ0EsTUFBSUMsS0FBSyxHQUFHLFNBQVJBLEtBQVEsR0FBWTtBQUNwQjtBQUNBLFFBQUlDLFdBQUosQ0FBZ0IsdUJBQWhCLEVBQXlDQyxFQUF6QyxDQUE0QyxTQUE1QyxFQUF1RCxVQUFTQyxDQUFULEVBQVk7QUFDL0RBLE9BQUMsQ0FBQ0MsY0FBRjtBQUNBQyxXQUFLLENBQUMsU0FBRCxDQUFMO0FBQ0gsS0FIRDtBQUlILEdBTkQ7O0FBUUEsU0FBTztBQUNIO0FBQ0FDLFFBQUksRUFBRSxnQkFBVztBQUNiTixXQUFLO0FBQ1I7QUFKRSxHQUFQO0FBTUgsQ0FqQnFCLEVBQXRCOztBQW1CQU8sTUFBTSxDQUFDQyxRQUFELENBQU4sQ0FBaUJDLEtBQWpCLENBQXVCLFlBQVc7QUFDOUJWLGlCQUFlLENBQUNPLElBQWhCO0FBQ0gsQ0FGRCIsImZpbGUiOiIuL3Jlc291cmNlcy9tZXRyb25pYy9qcy9wYWdlcy9jcnVkL2Zvcm1zL3dpZGdldHMvY2xpcGJvYXJkLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiXCJ1c2Ugc3RyaWN0XCI7XHJcbi8vIENsYXNzIGRlZmluaXRpb25cclxuXHJcbnZhciBLVENsaXBib2FyZERlbW8gPSBmdW5jdGlvbiAoKSB7XHJcblxyXG4gICAgLy8gUHJpdmF0ZSBmdW5jdGlvbnNcclxuICAgIHZhciBkZW1vcyA9IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAvLyBiYXNpYyBleGFtcGxlXHJcbiAgICAgICAgbmV3IENsaXBib2FyZEpTKCdbZGF0YS1jbGlwYm9hcmQ9dHJ1ZV0nKS5vbignc3VjY2VzcycsIGZ1bmN0aW9uKGUpIHtcclxuICAgICAgICAgICAgZS5jbGVhclNlbGVjdGlvbigpO1xyXG4gICAgICAgICAgICBhbGVydCgnQ29waWVkIScpO1xyXG4gICAgICAgIH0pO1xyXG4gICAgfVxyXG5cclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgLy8gcHVibGljIGZ1bmN0aW9uc1xyXG4gICAgICAgIGluaXQ6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICAgICBkZW1vcygpO1xyXG4gICAgICAgIH1cclxuICAgIH07XHJcbn0oKTtcclxuXHJcbmpRdWVyeShkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKSB7XHJcbiAgICBLVENsaXBib2FyZERlbW8uaW5pdCgpO1xyXG59KTtcclxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/metronic/js/pages/crud/forms/widgets/clipboard.js\n");
 
-var KTClipboardDemo = function () {
-  // Private functions
-  var demos = function demos() {
-    // basic example
-    new ClipboardJS('[data-clipboard=true]').on('success', function (e) {
-      e.clearSelection();
-      alert('Copied!');
-    });
-  };
+/***/ }),
 
-  return {
-    // public functions
-    init: function init() {
-      demos();
-    }
-  };
-}();
+/***/ 72:
+/*!***************************************************************************!*\
+  !*** multi ./resources/metronic/js/pages/crud/forms/widgets/clipboard.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-jQuery(document).ready(function () {
-  KTClipboardDemo.init();
-});
+module.exports = __webpack_require__(/*! F:\Work Space\NttpsBackOffice\nttps\metronic-theme\resources\metronic\js\pages\crud\forms\widgets\clipboard.js */"./resources/metronic/js/pages/crud/forms/widgets/clipboard.js");
+
 
 /***/ })
 

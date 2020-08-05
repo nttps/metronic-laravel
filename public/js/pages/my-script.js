@@ -81,22 +81,30 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 839);
+/******/ 	return __webpack_require__(__webpack_require__.s = 158);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 839:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./resources/metronic/js/pages/my-script.js":
+/*!**************************************************!*\
+  !*** ./resources/metronic/js/pages/my-script.js ***!
+  \**************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(840);
-
+eval("//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiIuL3Jlc291cmNlcy9tZXRyb25pYy9qcy9wYWdlcy9teS1zY3JpcHQuanMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/metronic/js/pages/my-script.js\n");
 
 /***/ }),
 
-/***/ 840:
-/***/ (function(module, exports) {
+/***/ 158:
+/*!********************************************************!*\
+  !*** multi ./resources/metronic/js/pages/my-script.js ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
+module.exports = __webpack_require__(/*! F:\Work Space\NttpsBackOffice\nttps\metronic-theme\resources\metronic\js\pages\my-script.js */"./resources/metronic/js/pages/my-script.js");
 
 
 /***/ })

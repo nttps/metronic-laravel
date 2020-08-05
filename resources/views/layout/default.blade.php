@@ -21,6 +21,8 @@ License: You must have a valid license purchased only from themeforest(the above
         {{-- Meta Data --}}
         <meta name="description" content="@yield('page_description', $page_description ?? '')"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
         {{-- Favicon --}}
         <link rel="shortcut icon" href="{{ asset('media/logos/favicon.ico') }}" />
@@ -39,7 +41,7 @@ License: You must have a valid license purchased only from themeforest(the above
         @endforeach
 
         {{-- Includable CSS --}}
-        @yield('styles')
+        @stack('styles')
     </head>
 
     <body {{ Metronic::printAttrs('body') }} {{ Metronic::printClasses('body') }}>
@@ -62,8 +64,16 @@ License: You must have a valid license purchased only from themeforest(the above
             <script src="{{ asset($script) }}" type="text/javascript"></script>
         @endforeach
 
+
+        <script>
+            $.ajaxSetup({
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                }
+            });
+        </script>
         {{-- Includable JS --}}
-        @yield('scripts')
+        @stack('scripts')
 
     </body>
 </html>

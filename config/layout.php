@@ -65,7 +65,7 @@ return [
                 'gray-900' => '#212121'
             ]
         ],
-        'font-family' => 'Poppins'
+        'font-family' => 'Kanit'
     ],
 
     // Page loader
@@ -262,7 +262,7 @@ return [
         'fonts' => [
             'google' => [
                 'families' => [
-                    'Poppins:300,400,500,600,700'
+                    'Kanit:300,400,500,600,700'
                 ]
             ]
         ],

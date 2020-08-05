@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/dashboard', 'Nttps\MetronicTheme\Http\Controllers\PagesController@index');
+//Route::get('/dashboard', 'Nttps\MetronicTheme\Http\Controllers\PagesController@index');
 
 
 // Demo routes

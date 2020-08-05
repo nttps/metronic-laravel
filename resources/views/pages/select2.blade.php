@@ -1,5 +1,5 @@
 {{-- Extends layout --}}
-@extends('metronic::layout.default')
+@extends('layout.default')
 
 {{-- Content --}}
 @section('content')

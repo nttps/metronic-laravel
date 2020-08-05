@@ -96,14 +96,14 @@
                         {{-- Symbol --}}
                         <a href="#" class="symbol symbol-35 symbol-light-success mr-2">
                             <span class="symbol-label">
-                                <img src="{{ asset('vendor/metronic/media/svg/avatars/004-boy-1.svg') }}" class="h-75 align-self-end"/>
+                                <img src="{{ asset('media/svg/avatars/004-boy-1.svg') }}" class="h-75 align-self-end"/>
                             </span>
                         </a>
 
                         {{-- Symbol --}}
                         <a href="#" class="symbol symbol-35 symbol-light-success">
                             <span class="symbol-label">
-                                <img src="{{ asset('vendor/metronic/media/svg/avatars/002-girl.svg') }}" class="h-75 align-self-end"/>
+                                <img src="{{ asset('media/svg/avatars/002-girl.svg') }}" class="h-75 align-self-end"/>
                             </span>
                         </a>
                     </div>

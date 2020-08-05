@@ -81,266 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 755);
+/******/ 	return __webpack_require__(__webpack_require__.s = 114);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 755:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(756);
-
-
-/***/ }),
-
-/***/ 756:
+/***/ "./resources/metronic/js/pages/custom/login/login.js":
+/*!***********************************************************!*\
+  !*** ./resources/metronic/js/pages/custom/login/login.js ***!
+  \***********************************************************/
+/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
- // Class Definition
+eval(" // Class Definition\n\nvar KTLoginGeneral = function () {\n  var _login;\n\n  var _showForm = function _showForm(form) {\n    var cls = 'login-' + form + '-on';\n    var form = 'kt_login_' + form + '_form';\n\n    _login.removeClass('login-forgot-on');\n\n    _login.removeClass('login-signin-on');\n\n    _login.removeClass('login-signup-on');\n\n    _login.addClass(cls);\n\n    KTUtil.animateClass(KTUtil.getById(form), 'animate__animated animate__backInUp');\n  };\n\n  var _handleSignInForm = function _handleSignInForm() {\n    var validation; // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/\n\n    validation = FormValidation.formValidation(KTUtil.getById('kt_login_signin_form'), {\n      fields: {\n        username: {\n          validators: {\n            notEmpty: {\n              message: 'Username is required'\n            }\n          }\n        },\n        password: {\n          validators: {\n            notEmpty: {\n              message: 'Password is required'\n            }\n          }\n        }\n      },\n      plugins: {\n        trigger: new FormValidation.plugins.Trigger(),\n        bootstrap: new FormValidation.plugins.Bootstrap()\n      }\n    });\n    $('#kt_login_signin_submit').on('click', function (e) {\n      e.preventDefault();\n      validation.validate().then(function (status) {\n        if (status == 'Valid') {\n          swal.fire({\n            text: \"All is cool! Now you submit this form\",\n            icon: \"success\",\n            buttonsStyling: false,\n            confirmButtonText: \"Ok, got it!\",\n            confirmButtonClass: \"btn font-weight-bold btn-light-primary\"\n          }).then(function () {\n            KTUtil.scrollTop();\n          });\n        } else {\n          swal.fire({\n            text: \"Sorry, looks like there are some errors detected, please try again.\",\n            icon: \"error\",\n            buttonsStyling: false,\n            confirmButtonText: \"Ok, got it!\",\n            confirmButtonClass: \"btn font-weight-bold btn-light\"\n          }).then(function () {\n            KTUtil.scrollTop();\n          });\n        }\n      });\n    }); // Handle forgot button\n\n    $('#kt_login_forgot').on('click', function (e) {\n      e.preventDefault();\n\n      _showForm('forgot');\n    }); // Handle signup\n\n    $('#kt_login_signup').on('click', function (e) {\n      e.preventDefault();\n\n      _showForm('signup');\n    });\n  };\n\n  var _handleSignUpForm = function _handleSignUpForm(e) {\n    var validation;\n    var form = KTUtil.getById('kt_login_signup_form'); // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/\n\n    validation = FormValidation.formValidation(form, {\n      fields: {\n        fullname: {\n          validators: {\n            notEmpty: {\n              message: 'Username is required'\n            }\n          }\n        },\n        email: {\n          validators: {\n            notEmpty: {\n              message: 'Email address is required'\n            },\n            emailAddress: {\n              message: 'The value is not a valid email address'\n            }\n          }\n        },\n        password: {\n          validators: {\n            notEmpty: {\n              message: 'The password is required'\n            }\n          }\n        },\n        cpassword: {\n          validators: {\n            notEmpty: {\n              message: 'The password confirmation is required'\n            },\n            identical: {\n              compare: function compare() {\n                return form.querySelector('[name=\"password\"]').value;\n              },\n              message: 'The password and its confirm are not the same'\n            }\n          }\n        },\n        agree: {\n          validators: {\n            notEmpty: {\n              message: 'You must accept the terms and conditions'\n            }\n          }\n        }\n      },\n      plugins: {\n        trigger: new FormValidation.plugins.Trigger(),\n        bootstrap: new FormValidation.plugins.Bootstrap()\n      }\n    });\n    $('#kt_login_signup_submit').on('click', function (e) {\n      e.preventDefault();\n      validation.validate().then(function (status) {\n        if (status == 'Valid') {\n          swal.fire({\n            text: \"All is cool! Now you submit this form\",\n            icon: \"success\",\n            buttonsStyling: false,\n            confirmButtonText: \"Ok, got it!\",\n            confirmButtonClass: \"btn font-weight-bold btn-light-primary\"\n          }).then(function () {\n            KTUtil.scrollTop();\n          });\n        } else {\n          swal.fire({\n            text: \"Sorry, looks like there are some errors detected, please try again.\",\n            icon: \"error\",\n            buttonsStyling: false,\n            confirmButtonText: \"Ok, got it!\",\n            confirmButtonClass: \"btn font-weight-bold btn-light\"\n          }).then(function () {\n            KTUtil.scrollTop();\n          });\n        }\n      });\n    }); // Handle cancel button\n\n    $('#kt_login_signup_cancel').on('click', function (e) {\n      e.preventDefault();\n\n      _showForm('signin');\n    });\n  };\n\n  var _handleForgotForm = function _handleForgotForm(e) {\n    var validation; // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/\n\n    validation = FormValidation.formValidation(KTUtil.getById('kt_login_forgot_form'), {\n      fields: {\n        email: {\n          validators: {\n            notEmpty: {\n              message: 'Email address is required'\n            },\n            emailAddress: {\n              message: 'The value is not a valid email address'\n            }\n          }\n        }\n      },\n      plugins: {\n        trigger: new FormValidation.plugins.Trigger(),\n        bootstrap: new FormValidation.plugins.Bootstrap()\n      }\n    }); // Handle submit button\n\n    $('#kt_login_forgot_submit').on('click', function (e) {\n      e.preventDefault();\n      validation.validate().then(function (status) {\n        if (status == 'Valid') {\n          // Submit form\n          KTUtil.scrollTop();\n        } else {\n          swal.fire({\n            text: \"Sorry, looks like there are some errors detected, please try again.\",\n            icon: \"error\",\n            buttonsStyling: false,\n            confirmButtonText: \"Ok, got it!\",\n            confirmButtonClass: \"btn font-weight-bold btn-light\"\n          }).then(function () {\n            KTUtil.scrollTop();\n          });\n        }\n      });\n    }); // Handle cancel button\n\n    $('#kt_login_forgot_cancel').on('click', function (e) {\n      e.preventDefault();\n\n      _showForm('signin');\n    });\n  }; // Public Functions\n\n\n  return {\n    // public functions\n    init: function init() {\n      _login = $('#kt_login');\n\n      _handleSignInForm();\n\n      _handleSignUpForm();\n\n      _handleForgotForm();\n    }\n  };\n}(); // Class Initialization\n\n\njQuery(document).ready(function () {\n  KTLoginGeneral.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvbWV0cm9uaWMvanMvcGFnZXMvY3VzdG9tL2xvZ2luL2xvZ2luLmpzP2RjY2UiXSwibmFtZXMiOlsiS1RMb2dpbkdlbmVyYWwiLCJfbG9naW4iLCJfc2hvd0Zvcm0iLCJmb3JtIiwiY2xzIiwicmVtb3ZlQ2xhc3MiLCJhZGRDbGFzcyIsIktUVXRpbCIsImFuaW1hdGVDbGFzcyIsImdldEJ5SWQiLCJfaGFuZGxlU2lnbkluRm9ybSIsInZhbGlkYXRpb24iLCJGb3JtVmFsaWRhdGlvbiIsImZvcm1WYWxpZGF0aW9uIiwiZmllbGRzIiwidXNlcm5hbWUiLCJ2YWxpZGF0b3JzIiwibm90RW1wdHkiLCJtZXNzYWdlIiwicGFzc3dvcmQiLCJwbHVnaW5zIiwidHJpZ2dlciIsIlRyaWdnZXIiLCJib290c3RyYXAiLCJCb290c3RyYXAiLCIkIiwib24iLCJlIiwicHJldmVudERlZmF1bHQiLCJ2YWxpZGF0ZSIsInRoZW4iLCJzdGF0dXMiLCJzd2FsIiwiZmlyZSIsInRleHQiLCJpY29uIiwiYnV0dG9uc1N0eWxpbmciLCJjb25maXJtQnV0dG9uVGV4dCIsImNvbmZpcm1CdXR0b25DbGFzcyIsInNjcm9sbFRvcCIsIl9oYW5kbGVTaWduVXBGb3JtIiwiZnVsbG5hbWUiLCJlbWFpbCIsImVtYWlsQWRkcmVzcyIsImNwYXNzd29yZCIsImlkZW50aWNhbCIsImNvbXBhcmUiLCJxdWVyeVNlbGVjdG9yIiwidmFsdWUiLCJhZ3JlZSIsIl9oYW5kbGVGb3Jnb3RGb3JtIiwiaW5pdCIsImpRdWVyeSIsImRvY3VtZW50IiwicmVhZHkiXSwibWFwcGluZ3MiOiJDQUVBOztBQUNBLElBQUlBLGNBQWMsR0FBRyxZQUFXO0FBQzVCLE1BQUlDLE1BQUo7O0FBRUEsTUFBSUMsU0FBUyxHQUFHLFNBQVpBLFNBQVksQ0FBU0MsSUFBVCxFQUFlO0FBQzNCLFFBQUlDLEdBQUcsR0FBRyxXQUFXRCxJQUFYLEdBQWtCLEtBQTVCO0FBQ0EsUUFBSUEsSUFB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Qyx5QkFBRCxDQUFELENBQTZCQyxFQUE3QixDQUFnQyxPQUFoQyxFQUF5QyxVQUFVQyxDQUFWLEVBQWE7QUFDbERBLE9BQUMsQ0FBQ0MsY0FBRjs7QUFFQTFCLGVBQVMsQ0FBQyxRQUFELENBQVQ7QUFDSCxLQUpEO0FBS0gsR0F0REQsQ0F4TDRCLENBZ1A1Qjs7O0FBQ0EsU0FBTztBQUNIO0FBQ0FpRCxRQUFJLEVBQUUsZ0JBQVc7QUFDYmxELFlBQU0sR0FBR3dCLENBQUMsQ0FBQyxXQUFELENBQVY7O0FBRUFmLHVCQUFpQjs7QUFDakI4Qix1QkFBaUI7O0FBQ2pCVSx1QkFBaUI7QUFDcEI7QUFSRSxHQUFQO0FBVUgsQ0EzUG9CLEVBQXJCLEMsQ0E2UEE7OztBQUNBRSxNQUFNLENBQUNDLFFBQUQsQ0FBTixDQUFpQkMsS0FBakIsQ0FBdUIsWUFBVztBQUM5QnRELGdCQUFjLENBQUNtRCxJQUFmO0FBQ0gsQ0FGRCIsImZpbGUiOiIuL3Jlc291cmNlcy9tZXRyb25pYy9qcy9wYWdlcy9jdXN0b20vbG9naW4vbG9naW4uanMuanMiLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBzdHJpY3RcIjtcclxuXHJcbi8vIENsYXNzIERlZmluaXRpb25cclxudmFyIEtUTG9naW5HZW5lcmFsID0gZnVuY3Rpb24oKSB7XHJcbiAgICB2YXIgX2xvZ2luO1xyXG5cclxuICAgIHZhciBfc2hvd0Zvcm0gPSBmdW5jdGlvbihmb3JtKSB7XHJcbiAgICAgICAgdmFyIGNscyA9ICdsb2dpbi0nICsgZm9ybSArICctb24nO1xyXG4gICAgICAgIHZhciBmb3JtID0gJ2t0X2xvZ2luXycgKyBmb3JtICsgJ19mb3JtJztcclxuXHJcbiAgICAgICAgX2xvZ2luLnJlbW92ZUNsYXNzKCdsb2dpbi1mb3Jnb3Qtb24nKTtcclxuICAgICAgICBfbG9naW4ucmVtb3ZlQ2xhc3MoJ2xvZ2luLXNpZ25pbi1vbicpO1xyXG4gICAgICAgIF9sb2dpbi5yZW1vdmVDbGFzcygnbG9naW4tc2lnbnVwLW9uJyk7XHJcblxyXG4gICAgICAgIF9sb2dpbi5hZGRDbGFzcyhjbHMpO1xyXG5cclxuICAgICAgICBLVFV0aWwuYW5pbWF0ZUNsYXNzKEtUVXRpbC5nZXRCeUlkKGZvcm0pLCAnYW5pbWF0ZV9fYW5pbWF0ZWQgYW5pbWF0ZV9fYmFja0luVXAnKTtcclxuICAgIH1cclxuXHJcbiAgICB2YXIgX2hhbmRsZVNpZ25JbkZvcm0gPSBmdW5jdGlvbigpIHtcclxuICAgICAgICB2YXIgdmFsaWRhdGlvbjtcclxuXHJcbiAgICAgICAgLy8gSW5pdCBmb3JtIHZhbGlkYXRpb24gcnVsZXMuIEZvciBtb3JlIGluZm8gY2hlY2sgdGhlIEZvcm1WYWxpZGF0aW9uIHBsdWdpbidzIG9mZmljaWFsIGRvY3VtZW50YXRpb246aHR0cHM6Ly9mb3JtdmFsaWRhdGlvbi5pby9cclxuICAgICAgICB2YWxpZGF0aW9uID0gRm9ybVZhbGlkYXRpb24uZm9ybVZhbGlkYXRpb24oXHJcblx0XHRcdEtUVXRpbC5nZXRCeUlkKCdrdF9sb2dpbl9zaWduaW5fZm9ybScpLFxyXG5cdFx0XHR7XHJcblx0XHRcdFx0ZmllbGRzOiB7XHJcblx0XHRcdFx0XHR1c2VybmFtZToge1xyXG5cdFx0XHRcdFx0XHR2YWxpZGF0b3JzOiB7XHJcblx0XHRcdFx0XHRcdFx0bm90RW1wdHk6IHtcclxuXHRcdFx0XHRcdFx0XHRcdG1lc3NhZ2U6ICdVc2VybmFtZSBpcyByZXF1aXJlZCdcclxuXHRcdFx0XHRcdFx0XHR9XHJcblx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdH0sXHJcblx0XHRcdFx0XHRwYXNzd29yZDoge1xyXG5cdFx0XHRcdFx0XHR2YWxpZGF0b3JzOiB7XHJcblx0XHRcdFx0XHRcdFx0bm90RW1wdHk6IHtcclxuXHRcdFx0XHRcdFx0XHRcdG1lc3NhZ2U6ICdQYXNzd29yZCBpcyByZXF1aXJlZCdcclxuXHRcdFx0XHRcdFx0XHR9XHJcblx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdH1cclxuXHRcdFx0XHR9LFxyXG5cdFx0XHRcdHBsdWdpbnM6IHtcclxuXHRcdFx0XHRcdHRyaWdnZXI6IG5ldyBGb3JtVmFsaWRhdGlvbi5wbHVnaW5zLlRyaWdnZXIoKSxcclxuXHRcdFx0XHRcdGJvb3RzdHJhcDogbmV3IEZvcm1WYWxpZGF0aW9uLnBsdWdpbnMuQm9vdHN0cmFwKClcclxuXHRcdFx0XHR9XHJcblx0XHRcdH1cclxuXHRcdCk7XHJcblxyXG4gICAgICAgICQoJyNrdF9sb2dpbl9zaWduaW5fc3VibWl0Jykub24oJ2NsaWNrJywgZnVuY3Rpb24gKGUpIHtcclxuICAgICAgICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xyXG5cclxuICAgICAgICAgICAgdmFsaWRhdGlvbi52YWxpZGF0ZSgpLnRoZW4oZnVuY3Rpb24oc3RhdHVzKSB7XHJcblx0XHQgICAgICAgIGlmIChzdGF0dXMgPT0gJ1ZhbGlkJykge1xyXG4gICAgICAgICAgICAgICAgICAgIHN3YWwuZmlyZSh7XHJcblx0XHQgICAgICAgICAgICAgICAgdGV4dDogXCJBbGwgaXMgY29vbCEgTm93IHlvdSBzdWJtaXQgdGhpcyBmb3JtXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgaWNvbjogXCJzdWNjZXNzXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgYnV0dG9uc1N0eWxpbmc6IGZhbHNlLFxyXG5cdFx0ICAgICAgICAgICAgICAgIGNvbmZpcm1CdXR0b25UZXh0OiBcIk9rLCBnb3QgaXQhXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgY29uZmlybUJ1dHRvbkNsYXNzOiBcImJ0biBmb250LXdlaWdodC1ib2xkIGJ0bi1saWdodC1wcmltYXJ5XCJcclxuXHRcdCAgICAgICAgICAgIH0pLnRoZW4oZnVuY3Rpb24oKSB7XHJcblx0XHRcdFx0XHRcdEtUVXRpbC5zY3JvbGxUb3AoKTtcclxuXHRcdFx0XHRcdH0pO1xyXG5cdFx0XHRcdH0gZWxzZSB7XHJcblx0XHRcdFx0XHRzd2FsLmZpcmUoe1xyXG5cdFx0ICAgICAgICAgICAgICAgIHRleHQ6IFwiU29ycnksIGxvb2tzIGxpa2UgdGhlcmUgYXJlIHNvbWUgZXJyb3JzIGRldGVjdGVkLCBwbGVhc2UgdHJ5IGFnYWluLlwiLFxyXG5cdFx0ICAgICAgICAgICAgICAgIGljb246IFwiZXJyb3JcIixcclxuXHRcdCAgICAgICAgICAgICAgICBidXR0b25zU3R5bGluZzogZmFsc2UsXHJcblx0XHQgICAgICAgICAgICAgICAgY29uZmlybUJ1dHRvblRleHQ6IFwiT2ssIGdvdCBpdCFcIixcclxuXHRcdCAgICAgICAgICAgICAgICBjb25maXJtQnV0dG9uQ2xhc3M6IFwiYnRuIGZvbnQtd2VpZ2h0LWJvbGQgYnRuLWxpZ2h0XCJcclxuXHRcdCAgICAgICAgICAgIH0pLnRoZW4oZnVuY3Rpb24oKSB7XHJcblx0XHRcdFx0XHRcdEtUVXRpbC5zY3JvbGxUb3AoKTtcclxuXHRcdFx0XHRcdH0pO1xyXG5cdFx0XHRcdH1cclxuXHRcdCAgICB9KTtcclxuICAgICAgICB9KTtcclxuXHJcbiAgICAgICAgLy8gSGFuZGxlIGZvcmdvdCBidXR0b25cclxuICAgICAgICAkKCcja3RfbG9naW5fZm9yZ290Jykub24oJ2NsaWNrJywgZnVuY3Rpb24gKGUpIHtcclxuICAgICAgICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xyXG4gICAgICAgICAgICBfc2hvd0Zvcm0oJ2ZvcmdvdCcpO1xyXG4gICAgICAgIH0pO1xyXG5cclxuICAgICAgICAvLyBIYW5kbGUgc2lnbnVwXHJcbiAgICAgICAgJCgnI2t0X2xvZ2luX3NpZ251cCcpLm9uKCdjbGljaycsIGZ1bmN0aW9uIChlKSB7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuICAgICAgICAgICAgX3Nob3dGb3JtKCdzaWdudXAnKTtcclxuICAgICAgICB9KTtcclxuICAgIH1cclxuXHJcbiAgICB2YXIgX2hhbmRsZVNpZ25VcEZvcm0gPSBmdW5jdGlvbihlKSB7XHJcbiAgICAgICAgdmFyIHZhbGlkYXRpb247XHJcbiAgICAgICAgdmFyIGZvcm0gPSBLVFV0aWwuZ2V0QnlJZCgna3RfbG9naW5fc2lnbnVwX2Zvcm0nKTtcclxuXHJcbiAgICAgICAgLy8gSW5pdCBmb3JtIHZhbGlkYXRpb24gcnVsZXMuIEZvciBtb3JlIGluZm8gY2hlY2sgdGhlIEZvcm1WYWxpZGF0aW9uIHBsdWdpbidzIG9mZmljaWFsIGRvY3VtZW50YXRpb246aHR0cHM6Ly9mb3JtdmFsaWRhdGlvbi5pby9cclxuICAgICAgICB2YWxpZGF0aW9uID0gRm9ybVZhbGlkYXRpb24uZm9ybVZhbGlkYXRpb24oXHJcblx0XHRcdGZvcm0sXHJcblx0XHRcdHtcclxuXHRcdFx0XHRmaWVsZHM6IHtcclxuXHRcdFx0XHRcdGZ1bGxuYW1lOiB7XHJcblx0XHRcdFx0XHRcdHZhbGlkYXRvcnM6IHtcclxuXHRcdFx0XHRcdFx0XHRub3RFbXB0eToge1xyXG5cdFx0XHRcdFx0XHRcdFx0bWVzc2FnZTogJ1VzZXJuYW1lIGlzIHJlcXVpcmVkJ1xyXG5cdFx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdFx0fVxyXG5cdFx0XHRcdFx0fSxcclxuXHRcdFx0XHRcdGVtYWlsOiB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIHZhbGlkYXRvcnM6IHtcclxuXHRcdFx0XHRcdFx0XHRub3RFbXB0eToge1xyXG5cdFx0XHRcdFx0XHRcdFx0bWVzc2FnZTogJ0VtYWlsIGFkZHJlc3MgaXMgcmVxdWlyZWQnXHJcblx0XHRcdFx0XHRcdFx0fSxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVtYWlsQWRkcmVzczoge1xyXG5cdFx0XHRcdFx0XHRcdFx0bWVzc2FnZTogJ1RoZSB2YWx1ZSBpcyBub3QgYSB2YWxpZCBlbWFpbCBhZGRyZXNzJ1xyXG5cdFx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdFx0fVxyXG5cdFx0XHRcdFx0fSxcclxuICAgICAgICAgICAgICAgICAgICBwYXNzd29yZDoge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2YWxpZGF0b3JzOiB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBub3RFbXB0eToge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1lc3NhZ2U6ICdUaGUgcGFzc3dvcmQgaXMgcmVxdWlyZWQnXHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cclxuICAgICAgICAgICAgICAgICAgICB9LFxyXG4gICAgICAgICAgICAgICAgICAgIGNwYXNzd29yZDoge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2YWxpZGF0b3JzOiB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBub3RFbXB0eToge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1lc3NhZ2U6ICdUaGUgcGFzc3dvcmQgY29uZmlybWF0aW9uIGlzIHJlcXVpcmVkJ1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgfSxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlkZW50aWNhbDoge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbXBhcmU6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICByZXR1cm4gZm9ybS5xdWVyeVNlbGVjdG9yKCdbbmFtZT1cInBhc3N3b3JkXCJdJykudmFsdWU7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgfSxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBtZXNzYWdlOiAnVGhlIHBhc3N3b3JkIGFuZCBpdHMgY29uZmlybSBhcmUgbm90IHRoZSBzYW1lJ1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgfSxcclxuICAgICAgICAgICAgICAgICAgICBhZ3JlZToge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICB2YWxpZGF0b3JzOiB7XHJcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBub3RFbXB0eToge1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIG1lc3NhZ2U6ICdZb3UgbXVzdCBhY2NlcHQgdGhlIHRlcm1zIGFuZCBjb25kaXRpb25zJ1xyXG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgfVxyXG4gICAgICAgICAgICAgICAgICAgICAgICB9XHJcbiAgICAgICAgICAgICAgICAgICAgfSxcclxuXHRcdFx0XHR9LFxyXG5cdFx0XHRcdHBsdWdpbnM6IHtcclxuXHRcdFx0XHRcdHRyaWdnZXI6IG5ldyBGb3JtVmFsaWRhdGlvbi5wbHVnaW5zLlRyaWdnZXIoKSxcclxuXHRcdFx0XHRcdGJvb3RzdHJhcDogbmV3IEZvcm1WYWxpZGF0aW9uLnBsdWdpbnMuQm9vdHN0cmFwKClcclxuXHRcdFx0XHR9XHJcblx0XHRcdH1cclxuXHRcdCk7XHJcblxyXG4gICAgICAgICQoJyNrdF9sb2dpbl9zaWdudXBfc3VibWl0Jykub24oJ2NsaWNrJywgZnVuY3Rpb24gKGUpIHtcclxuICAgICAgICAgICAgZS5wcmV2ZW50RGVmYXVsdCgpO1xyXG5cclxuICAgICAgICAgICAgdmFsaWRhdGlvbi52YWxpZGF0ZSgpLnRoZW4oZnVuY3Rpb24oc3RhdHVzKSB7XHJcblx0XHQgICAgICAgIGlmIChzdGF0dXMgPT0gJ1ZhbGlkJykge1xyXG4gICAgICAgICAgICAgICAgICAgIHN3YWwuZmlyZSh7XHJcblx0XHQgICAgICAgICAgICAgICAgdGV4dDogXCJBbGwgaXMgY29vbCEgTm93IHlvdSBzdWJtaXQgdGhpcyBmb3JtXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgaWNvbjogXCJzdWNjZXNzXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgYnV0dG9uc1N0eWxpbmc6IGZhbHNlLFxyXG5cdFx0ICAgICAgICAgICAgICAgIGNvbmZpcm1CdXR0b25UZXh0OiBcIk9rLCBnb3QgaXQhXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgY29uZmlybUJ1dHRvbkNsYXNzOiBcImJ0biBmb250LXdlaWdodC1ib2xkIGJ0bi1saWdodC1wcmltYXJ5XCJcclxuXHRcdCAgICAgICAgICAgIH0pLnRoZW4oZnVuY3Rpb24oKSB7XHJcblx0XHRcdFx0XHRcdEtUVXRpbC5zY3JvbGxUb3AoKTtcclxuXHRcdFx0XHRcdH0pO1xyXG5cdFx0XHRcdH0gZWxzZSB7XHJcblx0XHRcdFx0XHRzd2FsLmZpcmUoe1xyXG5cdFx0ICAgICAgICAgICAgICAgIHRleHQ6IFwiU29ycnksIGxvb2tzIGxpa2UgdGhlcmUgYXJlIHNvbWUgZXJyb3JzIGRldGVjdGVkLCBwbGVhc2UgdHJ5IGFnYWluLlwiLFxyXG5cdFx0ICAgICAgICAgICAgICAgIGljb246IFwiZXJyb3JcIixcclxuXHRcdCAgICAgICAgICAgICAgICBidXR0b25zU3R5bGluZzogZmFsc2UsXHJcblx0XHQgICAgICAgICAgICAgICAgY29uZmlybUJ1dHRvblRleHQ6IFwiT2ssIGdvdCBpdCFcIixcclxuXHRcdCAgICAgICAgICAgICAgICBjb25maXJtQnV0dG9uQ2xhc3M6IFwiYnRuIGZvbnQtd2VpZ2h0LWJvbGQgYnRuLWxpZ2h0XCJcclxuXHRcdCAgICAgICAgICAgIH0pLnRoZW4oZnVuY3Rpb24oKSB7XHJcblx0XHRcdFx0XHRcdEtUVXRpbC5zY3JvbGxUb3AoKTtcclxuXHRcdFx0XHRcdH0pO1xyXG5cdFx0XHRcdH1cclxuXHRcdCAgICB9KTtcclxuICAgICAgICB9KTtcclxuXHJcbiAgICAgICAgLy8gSGFuZGxlIGNhbmNlbCBidXR0b25cclxuICAgICAgICAkKCcja3RfbG9naW5fc2lnbnVwX2NhbmNlbCcpLm9uKCdjbGljaycsIGZ1bmN0aW9uIChlKSB7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuXHJcbiAgICAgICAgICAgIF9zaG93Rm9ybSgnc2lnbmluJyk7XHJcbiAgICAgICAgfSk7XHJcbiAgICB9XHJcblxyXG4gICAgdmFyIF9oYW5kbGVGb3Jnb3RGb3JtID0gZnVuY3Rpb24oZSkge1xyXG4gICAgICAgIHZhciB2YWxpZGF0aW9uO1xyXG5cclxuICAgICAgICAvLyBJbml0IGZvcm0gdmFsaWRhdGlvbiBydWxlcy4gRm9yIG1vcmUgaW5mbyBjaGVjayB0aGUgRm9ybVZhbGlkYXRpb24gcGx1Z2luJ3Mgb2ZmaWNpYWwgZG9jdW1lbnRhdGlvbjpodHRwczovL2Zvcm12YWxpZGF0aW9uLmlvL1xyXG4gICAgICAgIHZhbGlkYXRpb24gPSBGb3JtVmFsaWRhdGlvbi5mb3JtVmFsaWRhdGlvbihcclxuXHRcdFx0S1RVdGlsLmdldEJ5SWQoJ2t0X2xvZ2luX2ZvcmdvdF9mb3JtJyksXHJcblx0XHRcdHtcclxuXHRcdFx0XHRmaWVsZHM6IHtcclxuXHRcdFx0XHRcdGVtYWlsOiB7XHJcblx0XHRcdFx0XHRcdHZhbGlkYXRvcnM6IHtcclxuXHRcdFx0XHRcdFx0XHRub3RFbXB0eToge1xyXG5cdFx0XHRcdFx0XHRcdFx0bWVzc2FnZTogJ0VtYWlsIGFkZHJlc3MgaXMgcmVxdWlyZWQnXHJcblx0XHRcdFx0XHRcdFx0fSxcclxuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGVtYWlsQWRkcmVzczoge1xyXG5cdFx0XHRcdFx0XHRcdFx0bWVzc2FnZTogJ1RoZSB2YWx1ZSBpcyBub3QgYSB2YWxpZCBlbWFpbCBhZGRyZXNzJ1xyXG5cdFx0XHRcdFx0XHRcdH1cclxuXHRcdFx0XHRcdFx0fVxyXG5cdFx0XHRcdFx0fVxyXG5cdFx0XHRcdH0sXHJcblx0XHRcdFx0cGx1Z2luczoge1xyXG5cdFx0XHRcdFx0dHJpZ2dlcjogbmV3IEZvcm1WYWxpZGF0aW9uLnBsdWdpbnMuVHJpZ2dlcigpLFxyXG5cdFx0XHRcdFx0Ym9vdHN0cmFwOiBuZXcgRm9ybVZhbGlkYXRpb24ucGx1Z2lucy5Cb290c3RyYXAoKVxyXG5cdFx0XHRcdH1cclxuXHRcdFx0fVxyXG5cdFx0KTtcclxuXHJcbiAgICAgICAgLy8gSGFuZGxlIHN1Ym1pdCBidXR0b25cclxuICAgICAgICAkKCcja3RfbG9naW5fZm9yZ290X3N1Ym1pdCcpLm9uKCdjbGljaycsIGZ1bmN0aW9uIChlKSB7XHJcbiAgICAgICAgICAgIGUucHJldmVudERlZmF1bHQoKTtcclxuXHJcbiAgICAgICAgICAgIHZhbGlkYXRpb24udmFsaWRhdGUoKS50aGVuKGZ1bmN0aW9uKHN0YXR1cykge1xyXG5cdFx0ICAgICAgICBpZiAoc3RhdHVzID09ICdWYWxpZCcpIHtcclxuICAgICAgICAgICAgICAgICAgICAvLyBTdWJtaXQgZm9ybVxyXG4gICAgICAgICAgICAgICAgICAgIEtUVXRpbC5zY3JvbGxUb3AoKTtcclxuXHRcdFx0XHR9IGVsc2Uge1xyXG5cdFx0XHRcdFx0c3dhbC5maXJlKHtcclxuXHRcdCAgICAgICAgICAgICAgICB0ZXh0OiBcIlNvcnJ5LCBsb29rcyBsaWtlIHRoZXJlIGFyZSBzb21lIGVycm9ycyBkZXRlY3RlZCwgcGxlYXNlIHRyeSBhZ2Fpbi5cIixcclxuXHRcdCAgICAgICAgICAgICAgICBpY29uOiBcImVycm9yXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgYnV0dG9uc1N0eWxpbmc6IGZhbHNlLFxyXG5cdFx0ICAgICAgICAgICAgICAgIGNvbmZpcm1CdXR0b25UZXh0OiBcIk9rLCBnb3QgaXQhXCIsXHJcblx0XHQgICAgICAgICAgICAgICAgY29uZmlybUJ1dHRvbkNsYXNzOiBcImJ0biBmb250LXdlaWdodC1ib2xkIGJ0bi1saWdodFwiXHJcblx0XHQgICAgICAgICAgICB9KS50aGVuKGZ1bmN0aW9uKCkge1xyXG5cdFx0XHRcdFx0XHRLVFV0aWwuc2Nyb2xsVG9wKCk7XHJcblx0XHRcdFx0XHR9KTtcclxuXHRcdFx0XHR9XHJcblx0XHQgICAgfSk7XHJcbiAgICAgICAgfSk7XHJcblxyXG4gICAgICAgIC8vIEhhbmRsZSBjYW5jZWwgYnV0dG9uXHJcbiAgICAgICAgJCgnI2t0X2xvZ2luX2ZvcmdvdF9jYW5jZWwnKS5vbignY2xpY2snLCBmdW5jdGlvbiAoZSkge1xyXG4gICAgICAgICAgICBlLnByZXZlbnREZWZhdWx0KCk7XHJcblxyXG4gICAgICAgICAgICBfc2hvd0Zvcm0oJ3NpZ25pbicpO1xyXG4gICAgICAgIH0pO1xyXG4gICAgfVxyXG5cclxuICAgIC8vIFB1YmxpYyBGdW5jdGlvbnNcclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgLy8gcHVibGljIGZ1bmN0aW9uc1xyXG4gICAgICAgIGluaXQ6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICAgICBfbG9naW4gPSAkKCcja3RfbG9naW4nKTtcclxuXHJcbiAgICAgICAgICAgIF9oYW5kbGVTaWduSW5Gb3JtKCk7XHJcbiAgICAgICAgICAgIF9oYW5kbGVTaWduVXBGb3JtKCk7XHJcbiAgICAgICAgICAgIF9oYW5kbGVGb3Jnb3RGb3JtKCk7XHJcbiAgICAgICAgfVxyXG4gICAgfTtcclxufSgpO1xyXG5cclxuLy8gQ2xhc3MgSW5pdGlhbGl6YXRpb25cclxualF1ZXJ5KGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpIHtcclxuICAgIEtUTG9naW5HZW5lcmFsLmluaXQoKTtcclxufSk7XHJcbiJdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/metronic/js/pages/custom/login/login.js\n");
 
-var KTLoginGeneral = function () {
-  var _login;
+/***/ }),
 
-  var _showForm = function _showForm(form) {
-    var cls = 'login-' + form + '-on';
-    var form = 'kt_login_' + form + '_form';
+/***/ 114:
+/*!*****************************************************************!*\
+  !*** multi ./resources/metronic/js/pages/custom/login/login.js ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-    _login.removeClass('login-forgot-on');
+module.exports = __webpack_require__(/*! F:\Work Space\NttpsBackOffice\nttps\metronic-theme\resources\metronic\js\pages\custom\login\login.js */"./resources/metronic/js/pages/custom/login/login.js");
 
-    _login.removeClass('login-signin-on');
-
-    _login.removeClass('login-signup-on');
-
-    _login.addClass(cls);
-
-    KTUtil.animateClass(KTUtil.getById(form), 'animate__animated animate__backInUp');
-  };
-
-  var _handleSignInForm = function _handleSignInForm() {
-    var validation; // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-
-    validation = FormValidation.formValidation(KTUtil.getById('kt_login_signin_form'), {
-      fields: {
-        username: {
-          validators: {
-            notEmpty: {
-              message: 'Username is required'
-            }
-          }
-        },
-        password: {
-          validators: {
-            notEmpty: {
-              message: 'Password is required'
-            }
-          }
-        }
-      },
-      plugins: {
-        trigger: new FormValidation.plugins.Trigger(),
-        bootstrap: new FormValidation.plugins.Bootstrap()
-      }
-    });
-    $('#kt_login_signin_submit').on('click', function (e) {
-      e.preventDefault();
-      validation.validate().then(function (status) {
-        if (status == 'Valid') {
-          swal.fire({
-            text: "All is cool! Now you submit this form",
-            icon: "success",
-            buttonsStyling: false,
-            confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light-primary"
-          }).then(function () {
-            KTUtil.scrollTop();
-          });
-        } else {
-          swal.fire({
-            text: "Sorry, looks like there are some errors detected, please try again.",
-            icon: "error",
-            buttonsStyling: false,
-            confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light"
-          }).then(function () {
-            KTUtil.scrollTop();
-          });
-        }
-      });
-    }); // Handle forgot button
-
-    $('#kt_login_forgot').on('click', function (e) {
-      e.preventDefault();
-
-      _showForm('forgot');
-    }); // Handle signup
-
-    $('#kt_login_signup').on('click', function (e) {
-      e.preventDefault();
-
-      _showForm('signup');
-    });
-  };
-
-  var _handleSignUpForm = function _handleSignUpForm(e) {
-    var validation;
-    var form = KTUtil.getById('kt_login_signup_form'); // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-
-    validation = FormValidation.formValidation(form, {
-      fields: {
-        fullname: {
-          validators: {
-            notEmpty: {
-              message: 'Username is required'
-            }
-          }
-        },
-        email: {
-          validators: {
-            notEmpty: {
-              message: 'Email address is required'
-            },
-            emailAddress: {
-              message: 'The value is not a valid email address'
-            }
-          }
-        },
-        password: {
-          validators: {
-            notEmpty: {
-              message: 'The password is required'
-            }
-          }
-        },
-        cpassword: {
-          validators: {
-            notEmpty: {
-              message: 'The password confirmation is required'
-            },
-            identical: {
-              compare: function compare() {
-                return form.querySelector('[name="password"]').value;
-              },
-              message: 'The password and its confirm are not the same'
-            }
-          }
-        },
-        agree: {
-          validators: {
-            notEmpty: {
-              message: 'You must accept the terms and conditions'
-            }
-          }
-        }
-      },
-      plugins: {
-        trigger: new FormValidation.plugins.Trigger(),
-        bootstrap: new FormValidation.plugins.Bootstrap()
-      }
-    });
-    $('#kt_login_signup_submit').on('click', function (e) {
-      e.preventDefault();
-      validation.validate().then(function (status) {
-        if (status == 'Valid') {
-          swal.fire({
-            text: "All is cool! Now you submit this form",
-            icon: "success",
-            buttonsStyling: false,
-            confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light-primary"
-          }).then(function () {
-            KTUtil.scrollTop();
-          });
-        } else {
-          swal.fire({
-            text: "Sorry, looks like there are some errors detected, please try again.",
-            icon: "error",
-            buttonsStyling: false,
-            confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light"
-          }).then(function () {
-            KTUtil.scrollTop();
-          });
-        }
-      });
-    }); // Handle cancel button
-
-    $('#kt_login_signup_cancel').on('click', function (e) {
-      e.preventDefault();
-
-      _showForm('signin');
-    });
-  };
-
-  var _handleForgotForm = function _handleForgotForm(e) {
-    var validation; // Init form validation rules. For more info check the FormValidation plugin's official documentation:https://formvalidation.io/
-
-    validation = FormValidation.formValidation(KTUtil.getById('kt_login_forgot_form'), {
-      fields: {
-        email: {
-          validators: {
-            notEmpty: {
-              message: 'Email address is required'
-            },
-            emailAddress: {
-              message: 'The value is not a valid email address'
-            }
-          }
-        }
-      },
-      plugins: {
-        trigger: new FormValidation.plugins.Trigger(),
-        bootstrap: new FormValidation.plugins.Bootstrap()
-      }
-    }); // Handle submit button
-
-    $('#kt_login_forgot_submit').on('click', function (e) {
-      e.preventDefault();
-      validation.validate().then(function (status) {
-        if (status == 'Valid') {
-          // Submit form
-          KTUtil.scrollTop();
-        } else {
-          swal.fire({
-            text: "Sorry, looks like there are some errors detected, please try again.",
-            icon: "error",
-            buttonsStyling: false,
-            confirmButtonText: "Ok, got it!",
-            confirmButtonClass: "btn font-weight-bold btn-light"
-          }).then(function () {
-            KTUtil.scrollTop();
-          });
-        }
-      });
-    }); // Handle cancel button
-
-    $('#kt_login_forgot_cancel').on('click', function (e) {
-      e.preventDefault();
-
-      _showForm('signin');
-    });
-  }; // Public Functions
-
-
-  return {
-    // public functions
-    init: function init() {
-      _login = $('#kt_login');
-
-      _handleSignInForm();
-
-      _handleSignUpForm();
-
-      _handleForgotForm();
-    }
-  };
-}(); // Class Initialization
-
-
-jQuery(document).ready(function () {
-  KTLoginGeneral.init();
-});
 
 /***/ })
 

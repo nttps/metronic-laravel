@@ -81,41 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 681);
+/******/ 	return __webpack_require__(__webpack_require__.s = 67);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 681:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./resources/metronic/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js":
+/*!********************************************************************************************!*\
+  !*** ./resources/metronic/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js ***!
+  \********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(682);
-
+eval("// Class definition\nvar KTBootstrapMultipleSelectsplitter = function () {\n  // Private functions\n  var demos = function demos() {\n    // minimum setup\n    $('#kt_multipleselectsplitter_1, #kt_multipleselectsplitter_2').multiselectsplitter();\n  };\n\n  return {\n    // public functions\n    init: function init() {\n      demos();\n    }\n  };\n}();\n\njQuery(document).ready(function () {\n  KTBootstrapMultipleSelectsplitter.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvbWV0cm9uaWMvanMvcGFnZXMvY3J1ZC9mb3Jtcy93aWRnZXRzL2Jvb3RzdHJhcC1tdWx0aXBsZXNlbGVjdHNwbGl0dGVyLmpzP2M3ZTAiXSwibmFtZXMiOlsiS1RCb290c3RyYXBNdWx0aXBsZVNlbGVjdHNwbGl0dGVyIiwiZGVtb3MiLCIkIiwibXVsdGlzZWxlY3RzcGxpdHRlciIsImluaXQiLCJqUXVlcnkiLCJkb2N1bWVudCIsInJlYWR5Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUVBLElBQUlBLGlDQUFpQyxHQUFHLFlBQVk7QUFFaEQ7QUFDQSxNQUFJQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFZO0FBQ3BCO0FBQ0FDLEtBQUMsQ0FBQyw0REFBRCxDQUFELENBQWdFQyxtQkFBaEU7QUFDSCxHQUhEOztBQUtBLFNBQU87QUFDSDtBQUNBQyxRQUFJLEVBQUUsZ0JBQVc7QUFDYkgsV0FBSztBQUNSO0FBSkUsR0FBUDtBQU1ILENBZHVDLEVBQXhDOztBQWdCQUksTUFBTSxDQUFDQyxRQUFELENBQU4sQ0FBaUJDLEtBQWpCLENBQXVCLFlBQVc7QUFDOUJQLG1DQUFpQyxDQUFDSSxJQUFsQztBQUNILENBRkQiLCJmaWxlIjoiLi9yZXNvdXJjZXMvbWV0cm9uaWMvanMvcGFnZXMvY3J1ZC9mb3Jtcy93aWRnZXRzL2Jvb3RzdHJhcC1tdWx0aXBsZXNlbGVjdHNwbGl0dGVyLmpzLmpzIiwic291cmNlc0NvbnRlbnQiOlsiLy8gQ2xhc3MgZGVmaW5pdGlvblxyXG5cclxudmFyIEtUQm9vdHN0cmFwTXVsdGlwbGVTZWxlY3RzcGxpdHRlciA9IGZ1bmN0aW9uICgpIHtcclxuXHJcbiAgICAvLyBQcml2YXRlIGZ1bmN0aW9uc1xyXG4gICAgdmFyIGRlbW9zID0gZnVuY3Rpb24gKCkge1xyXG4gICAgICAgIC8vIG1pbmltdW0gc2V0dXBcclxuICAgICAgICAkKCcja3RfbXVsdGlwbGVzZWxlY3RzcGxpdHRlcl8xLCAja3RfbXVsdGlwbGVzZWxlY3RzcGxpdHRlcl8yJykubXVsdGlzZWxlY3RzcGxpdHRlcigpO1xyXG4gICAgfVxyXG5cclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgLy8gcHVibGljIGZ1bmN0aW9uc1xyXG4gICAgICAgIGluaXQ6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICAgICBkZW1vcygpO1xyXG4gICAgICAgIH1cclxuICAgIH07XHJcbn0oKTtcclxuXHJcbmpRdWVyeShkb2N1bWVudCkucmVhZHkoZnVuY3Rpb24oKSB7XHJcbiAgICBLVEJvb3RzdHJhcE11bHRpcGxlU2VsZWN0c3BsaXR0ZXIuaW5pdCgpO1xyXG59KTtcclxuIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/metronic/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js\n");
 
 /***/ }),
 
-/***/ 682:
-/***/ (function(module, exports) {
+/***/ 67:
+/*!**************************************************************************************************!*\
+  !*** multi ./resources/metronic/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js ***!
+  \**************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-// Class definition
-var KTBootstrapMultipleSelectsplitter = function () {
-  // Private functions
-  var demos = function demos() {
-    // minimum setup
-    $('#kt_multipleselectsplitter_1, #kt_multipleselectsplitter_2').multiselectsplitter();
-  };
+module.exports = __webpack_require__(/*! F:\Work Space\NttpsBackOffice\nttps\metronic-theme\resources\metronic\js\pages\crud\forms\widgets\bootstrap-multipleselectsplitter.js */"./resources/metronic/js/pages/crud/forms/widgets/bootstrap-multipleselectsplitter.js");
 
-  return {
-    // public functions
-    init: function init() {
-      demos();
-    }
-  };
-}();
-
-jQuery(document).ready(function () {
-  KTBootstrapMultipleSelectsplitter.init();
-});
 
 /***/ })
 

@@ -30,8 +30,8 @@
         </a>
     </li>
 
-    {{-- Item --}}
-    <li class="navi-item">
+     {{-- Item --}}
+     <li class="navi-item">
         <a href="#" class="navi-link">
             <span class="symbol symbol-20 mr-3">
                 <img src="{{ asset('vendor/metronic/media/svg/flags/063-japan.svg') }}" alt=""/>

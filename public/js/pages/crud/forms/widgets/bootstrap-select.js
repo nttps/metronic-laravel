@@ -81,41 +81,31 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 683);
+/******/ 	return __webpack_require__(__webpack_require__.s = 68);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 683:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./resources/metronic/js/pages/crud/forms/widgets/bootstrap-select.js":
+/*!****************************************************************************!*\
+  !*** ./resources/metronic/js/pages/crud/forms/widgets/bootstrap-select.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(684);
-
+eval("// Class definition\nvar KTBootstrapSelect = function () {\n  // Private functions\n  var demos = function demos() {\n    // minimum setup\n    $('.kt-selectpicker').selectpicker();\n  };\n\n  return {\n    // public functions\n    init: function init() {\n      demos();\n    }\n  };\n}();\n\njQuery(document).ready(function () {\n  KTBootstrapSelect.init();\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvbWV0cm9uaWMvanMvcGFnZXMvY3J1ZC9mb3Jtcy93aWRnZXRzL2Jvb3RzdHJhcC1zZWxlY3QuanM/ZDIwZSJdLCJuYW1lcyI6WyJLVEJvb3RzdHJhcFNlbGVjdCIsImRlbW9zIiwiJCIsInNlbGVjdHBpY2tlciIsImluaXQiLCJqUXVlcnkiLCJkb2N1bWVudCIsInJlYWR5Il0sIm1hcHBpbmdzIjoiQUFBQTtBQUVBLElBQUlBLGlCQUFpQixHQUFHLFlBQVk7QUFFaEM7QUFDQSxNQUFJQyxLQUFLLEdBQUcsU0FBUkEsS0FBUSxHQUFZO0FBQ3BCO0FBQ0FDLEtBQUMsQ0FBQyxrQkFBRCxDQUFELENBQXNCQyxZQUF0QjtBQUNILEdBSEQ7O0FBS0EsU0FBTztBQUNIO0FBQ0FDLFFBQUksRUFBRSxnQkFBVztBQUNiSCxXQUFLO0FBQ1I7QUFKRSxHQUFQO0FBTUgsQ0FkdUIsRUFBeEI7O0FBZ0JBSSxNQUFNLENBQUNDLFFBQUQsQ0FBTixDQUFpQkMsS0FBakIsQ0FBdUIsWUFBVztBQUM5QlAsbUJBQWlCLENBQUNJLElBQWxCO0FBQ0gsQ0FGRCIsImZpbGUiOiIuL3Jlc291cmNlcy9tZXRyb25pYy9qcy9wYWdlcy9jcnVkL2Zvcm1zL3dpZGdldHMvYm9vdHN0cmFwLXNlbGVjdC5qcy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vIENsYXNzIGRlZmluaXRpb25cclxuXHJcbnZhciBLVEJvb3RzdHJhcFNlbGVjdCA9IGZ1bmN0aW9uICgpIHtcclxuICAgIFxyXG4gICAgLy8gUHJpdmF0ZSBmdW5jdGlvbnNcclxuICAgIHZhciBkZW1vcyA9IGZ1bmN0aW9uICgpIHtcclxuICAgICAgICAvLyBtaW5pbXVtIHNldHVwXHJcbiAgICAgICAgJCgnLmt0LXNlbGVjdHBpY2tlcicpLnNlbGVjdHBpY2tlcigpO1xyXG4gICAgfVxyXG5cclxuICAgIHJldHVybiB7XHJcbiAgICAgICAgLy8gcHVibGljIGZ1bmN0aW9uc1xyXG4gICAgICAgIGluaXQ6IGZ1bmN0aW9uKCkge1xyXG4gICAgICAgICAgICBkZW1vcygpOyBcclxuICAgICAgICB9XHJcbiAgICB9O1xyXG59KCk7XHJcblxyXG5qUXVlcnkoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCkge1xyXG4gICAgS1RCb290c3RyYXBTZWxlY3QuaW5pdCgpO1xyXG59KTsiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/metronic/js/pages/crud/forms/widgets/bootstrap-select.js\n");
 
 /***/ }),
 
-/***/ 684:
-/***/ (function(module, exports) {
+/***/ 68:
+/*!**********************************************************************************!*\
+  !*** multi ./resources/metronic/js/pages/crud/forms/widgets/bootstrap-select.js ***!
+  \**********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-// Class definition
-var KTBootstrapSelect = function () {
-  // Private functions
-  var demos = function demos() {
-    // minimum setup
-    $('.kt-selectpicker').selectpicker();
-  };
+module.exports = __webpack_require__(/*! F:\Work Space\NttpsBackOffice\nttps\metronic-theme\resources\metronic\js\pages\crud\forms\widgets\bootstrap-select.js */"./resources/metronic/js/pages/crud/forms/widgets/bootstrap-select.js");
 
-  return {
-    // public functions
-    init: function init() {
-      demos();
-    }
-  };
-}();
-
-jQuery(document).ready(function () {
-  KTBootstrapSelect.init();
-});
 
 /***/ })
 
