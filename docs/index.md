@@ -2,5 +2,5 @@
 
 1. composer require nttps/metronic-laravel
 
-2. php artisan vendor:publish > metronic_public
+2. php artisan vendor:publish --tag=metronic_public
 
