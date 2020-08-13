@@ -21,7 +21,7 @@ return [
                     [
                         'title' => 'Bootstrap',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Add-user.svg', // or can be 'flaticon-light' or any flaticon-*
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Add-user.svg', // or can be 'flaticon-light' or any flaticon-*
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -77,7 +77,7 @@ return [
                     [
                         'title' => 'Custom',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Files/Pictures1.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Files/Pictures1.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -133,7 +133,7 @@ return [
                     [
                         'title' => 'Icons',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Address-card.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Address-card.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -161,7 +161,7 @@ return [
                     [
                         'title' => 'Cards',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Adress-book2.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Adress-book2.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -197,7 +197,7 @@ return [
                     [
                         'title' => 'Widgets',
                         'desc' => 'dashboard widget examples',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Chat1.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Chat1.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -241,7 +241,7 @@ return [
                     [
                         'title' => 'Calendar',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Chat-check.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Chat-check.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -268,7 +268,7 @@ return [
                     ],
                     [
                         'title' => 'Charts',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Dial-numbers.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Dial-numbers.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -305,7 +305,7 @@ return [
                     ],
                     [
                         'title' => 'Maps',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Incoming-box.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Incoming-box.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -321,7 +321,7 @@ return [
                     [
                         'title' => 'Miscellaneous',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Active-call.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Active-call.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -384,7 +384,7 @@ return [
                     [
                         'title' => 'Forms & Controls',
                         'desc' => 'Massive crud examples',
-                        'icon' => 'vendor/metronic/media/svg/icons/Shopping/Box2.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Box2.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -611,7 +611,7 @@ return [
                     [
                         'title' => 'KTDatatable',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/General/Thunder-move.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/General/Thunder-move.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -777,7 +777,7 @@ return [
                     [
                         'title' => 'Datatables.net',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Shopping/Gift.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Gift.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -925,7 +925,7 @@ return [
                     [
                         'title' => 'File Upload',
                         'desc' => '',
-                        'icon' => 'vendor/metronic/media/svg/icons/Shopping/Gift.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Gift.svg',
                         'bullet' => 'dot',
                         'submenu' => [
                             [
@@ -956,7 +956,7 @@ return [
                     [
                         'title' => 'Users',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Address-card.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Address-card.svg',
                         'submenu' => [
                             [
                                 'title' => 'List - Default',
@@ -987,7 +987,7 @@ return [
                     [
                         'title' => 'Profile',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Address-card.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Address-card.svg',
                         'submenu' => [
                             [
                                 'title' => 'Profile 1',
@@ -1032,7 +1032,7 @@ return [
                     [
                         'title' => 'Contacts',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Adress-book1.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Adress-book1.svg',
                         'submenu' => [
                             [
                                 'title' => 'List - Columns',
@@ -1059,7 +1059,7 @@ return [
                     [
                         'title' => 'Chat',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Mail-opened.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Mail-opened.svg',
                         'submenu' => [
                             [
                                 'title' => 'Private',
@@ -1078,7 +1078,7 @@ return [
                     [
                         'title' => 'Projects',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Shopping/Box2.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Box2.svg',
                         'submenu' => [
                             [
                                 'title' => 'List - Columns 1',
@@ -1117,7 +1117,7 @@ return [
                     [
                         'title' => 'Support Center',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/General/Shield-check.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/General/Shield-check.svg',
                         'submenu' => [
                             [
                                 'title' => 'Home 1',
@@ -1153,7 +1153,7 @@ return [
                     [
                         'title' => 'Todo',
                         'bullet' => 'dot',
-                        'icon' => 'vendor/metronic/media/svg/icons/Communication/Clipboard-list.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Communication/Clipboard-list.svg',
                         'submenu' => [
                             [
                                 'title' => 'Tasks',
@@ -1177,7 +1177,7 @@ return [
                             'type' => 'label-danger label-inline',
                             'value' => 'new'
                         ],
-                        'icon' => 'vendor/metronic/media/svg/icons/General/Shield-check.svg',
+                        'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/General/Shield-check.svg',
                         'title' => 'Inbox',
                         'page' => 'custom/apps/inbox'
                     ]

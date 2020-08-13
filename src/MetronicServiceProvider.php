@@ -31,7 +31,7 @@ class MetronicServiceProvider extends ServiceProvider
         Init::run();
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'metronic');
         $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/metronic'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/nttps/metronic-larvel'),
         ] , 'metronic_view');
         $this->loadRoutesFrom(__DIR__.'/../routes/metronic.php');
 
@@ -42,7 +42,7 @@ class MetronicServiceProvider extends ServiceProvider
         ], 'metronic_config');
 
         $this->publishes([
-            __DIR__.'/../public' => public_path('vendor/metronic'),
+            __DIR__.'/../public' => public_path('vendor/nttps/metronic-larvel'),
         ], 'metronic_public');
 
     }

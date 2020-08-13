@@ -258,7 +258,7 @@ return [
 
     // Demo Assets
     'resources' => [
-        'favicon' => 'vendor/metronic/media/img/logo/favicon.ico',
+        'favicon' => 'vendor/nttps/metronic-laravel/media/img/logo/favicon.ico',
         'fonts' => [
             'google' => [
                 'families' => [
@@ -267,14 +267,14 @@ return [
             ]
         ],
         'css' => [
-            'vendor/metronic/plugins/global/plugins.bundle.css',
-            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.css',
-            'vendor/metronic/css/style.bundle.css',
+            'vendor/nttps/metronic-laravel/plugins/global/plugins.bundle.css',
+            'vendor/nttps/metronic-laravel/plugins/custom/prismjs/prismjs.bundle.css',
+            'vendor/nttps/metronic-laravel/css/style.bundle.css',
         ],
         'js' => [
-            'vendor/metronic/plugins/global/plugins.bundle.js',
-            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.js',
-            'vendor/metronic/js/scripts.bundle.js',
+            'vendor/nttps/metronic-laravel/plugins/global/plugins.bundle.js',
+            'vendor/nttps/metronic-laravel/plugins/custom/prismjs/prismjs.bundle.js',
+            'vendor/nttps/metronic-laravel/js/scripts.bundle.js',
         ],
     ],
 
