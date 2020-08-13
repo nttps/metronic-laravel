@@ -22,8 +22,8 @@
                 "Nttps\\MetronicLaravel\\MetronicServiceProvider"
             ],
             "aliases": {
-                "Metronic": "Nttps\\MetronicLaravel\\Theme\\Metronic",
-                "Menu": "Nttps\\MetronicLaravel\\Theme\\Menu"
+                "Metronic": "Nttps\\MetronicLaravel\\Classes\\Theme\\Metronic",
+                "Menu": "Nttps\\MetronicLaravel\\Classes\\Theme\\Menu"
             }
         }
     }
