@@ -1,1 +1,2 @@
-﻿[ ] fix path resource
+﻿[x] fix path resource
+[ ] check path
