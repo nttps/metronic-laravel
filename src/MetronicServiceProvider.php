@@ -2,7 +2,7 @@
 
 namespace Nttps\MetronicLaravel;
 
-use Nttps\MetronicLaravel\Theme\Init;
+use Nttps\MetronicLaravel\Classes\Theme\Init;
 use Illuminate\Support\ServiceProvider;
 
 class MetronicServiceProvider extends ServiceProvider
