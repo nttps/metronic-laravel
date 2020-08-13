@@ -1,6 +1,6 @@
 ### INSTALL
 
-1. composer require nttps/metronic-laravel
+> composer require nttps/metronic-laravel
 
 
 ### Publish Vendor
