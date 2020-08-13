@@ -1,3 +1,8 @@
 # metronic-laravel
 
-1. php artisan vendor:publish > metronic_public
+### INSTALL
+
+1. composer require nttps/metronic-laravel
+
+2. php artisan vendor:publish > metronic_public
+
