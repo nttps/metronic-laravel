@@ -1,7 +1,7 @@
 <?php
-namespace Nttps\MetronicTheme\Theme;
+namespace Nttps\MetronicLaravel\Classes\Theme;
 
-use Nttps\MetronicTheme\Theme\Metronic;
+use Nttps\MetronicLaravel\Classes\Theme\Metronic;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 

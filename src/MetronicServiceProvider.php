@@ -1,8 +1,8 @@
 <?php
 
-namespace Nttps\MetronicTheme;
+namespace Nttps\MetronicLaravel;
 
-use Nttps\MetronicTheme\Theme\Init;
+use Nttps\MetronicLaravel\Classes\Theme\Init;
 use Illuminate\Support\ServiceProvider;
 
 class MetronicServiceProvider extends ServiceProvider
@@ -18,7 +18,7 @@ class MetronicServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/menu_aside.php', 'menu_aside');
         $this->mergeConfigFrom(__DIR__.'/../config/menu_header.php', 'menu_header');
 
-        $this->app->make('Nttps\MetronicTheme\Http\Controllers\PagesController');
+        $this->app->make('Nttps\MetronicLaravel\Http\Controllers\PagesController');
     }
 
     /**
