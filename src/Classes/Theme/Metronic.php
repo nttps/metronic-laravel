@@ -1,5 +1,5 @@
 <?php
-namespace Nttps\MetronicTheme\Theme;
+namespace Nttps\MetronicLaravel\Theme;
 
 class Metronic
 {

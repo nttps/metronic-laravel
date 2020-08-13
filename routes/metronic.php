@@ -13,13 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/dashboard', 'Nttps\MetronicTheme\Http\Controllers\PagesController@index');
+//Route::get('/dashboard', 'Nttps\MetronicLaravel\Http\Controllers\PagesController@index');
 
 
 // Demo routes
-Route::get('/datatables', 'Nttps\MetronicTheme\Http\Controllers\PagesController@datatables');
-Route::get('/ktdatatables', 'Nttps\MetronicTheme\Http\Controllers\PagesController@ktDatatables');
-Route::get('/select2', 'Nttps\MetronicTheme\Http\Controllers\PagesController@select2');
+Route::get('/datatables', 'Nttps\MetronicLaravel\Http\Controllers\PagesController@datatables');
+Route::get('/ktdatatables', 'Nttps\MetronicLaravel\Http\Controllers\PagesController@ktDatatables');
+Route::get('/select2', 'Nttps\MetronicLaravel\Http\Controllers\PagesController@select2');
 
 // Quick search dummy route to display html elements in search dropdown (header search)
-Route::get('/quick-search', 'Nttps\MetronicTheme\Http\Controllers\PagesController@quickSearch')->name('quick-search');
+Route::get('/quick-search', 'Nttps\MetronicLaravel\Http\Controllers\PagesController@quickSearch')->name('quick-search');
