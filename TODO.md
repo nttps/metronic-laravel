@@ -1,2 +1,4 @@
-﻿[x] fix path resource
-[ ] check path
+# TODO LIST
+
+- [x] fix path resource
+- [ ] check path
