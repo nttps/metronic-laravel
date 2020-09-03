@@ -176,7 +176,7 @@ return [
 
         // Search
         'search' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'offcanvas' => [
                 'direction' => 'right'
@@ -185,7 +185,7 @@ return [
 
         // Notifications
         'notifications' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'dropdown' => [
                 'style' => 'dark' // light|dark
@@ -197,7 +197,7 @@ return [
 
         // Quick Actions
         'quick-actions' => [
-            'display' => true,
+            'display' => false,
             'layout' => 'dropdown', // offcanvas, dropdown
             'dropdown' => [
                 'style' => 'dark' // light|dark
@@ -210,9 +210,9 @@ return [
         // User
         'user' => [
             'display' => true,
-            'layout' => 'offcanvas', // offcanvas, dropdown
+            'layout' => 'dropdown', // offcanvas, dropdown
             'dropdown' => [
-                'style' => 'dark' // light|dark
+                'style' => 'light' // light|dark
             ],
             'offcanvas' => [
                 'direction' => 'right'
@@ -221,12 +221,12 @@ return [
 
         // Languages
         'languages' => [
-            'display' => true
+            'display' => false
         ],
 
         // Cart
         'cart' => [
-            'display' => true,
+            'display' => false,
             'dropdown' => [
                 'style' => 'dark' // light|dark
             ]
@@ -234,7 +234,7 @@ return [
 
         // Quick Panel
         'quick-panel' => [
-            'display' => true,
+            'display' => false,
             'offcanvas' => [
                 'direction' => 'right'
             ]
@@ -242,12 +242,12 @@ return [
 
         // Chat
         'chat' => [
-            'display' => true,
+            'display' => false,
         ],
 
         // Page Toolbar
         'toolbar' => [
-            'display' => true
+            'display' => false
         ],
 
         // Scrolltop
@@ -258,7 +258,7 @@ return [
 
     // Demo Assets
     'resources' => [
-        'favicon' => 'vendor/metronic/media/img/logo/favicon.ico',
+        'favicon' => 'vendor/nttps/metronic-laravel/media/img/logo/favicon.ico',
         'fonts' => [
             'google' => [
                 'families' => [
@@ -267,14 +267,14 @@ return [
             ]
         ],
         'css' => [
-            'vendor/metronic/plugins/global/plugins.bundle.css',
-            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.css',
-            'vendor/metronic/css/style.bundle.css',
+            'vendor/nttps/metronic-laravel/plugins/global/plugins.bundle.css',
+            'vendor/nttps/metronic-laravel/plugins/custom/prismjs/prismjs.bundle.css',
+            'vendor/nttps/metronic-laravel/css/style.bundle.css',
         ],
         'js' => [
-            'vendor/metronic/plugins/global/plugins.bundle.js',
-            'vendor/metronic/plugins/custom/prismjs/prismjs.bundle.js',
-            'vendor/metronic/js/scripts.bundle.js',
+            'vendor/nttps/metronic-laravel/plugins/global/plugins.bundle.js',
+            'vendor/nttps/metronic-laravel/plugins/custom/prismjs/prismjs.bundle.js',
+            'vendor/nttps/metronic-laravel/js/scripts.bundle.js',
         ],
     ],
 

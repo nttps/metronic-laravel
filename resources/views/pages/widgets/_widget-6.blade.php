@@ -42,7 +42,7 @@
                         <td class="pl-0 py-4">
                             <div class="symbol symbol-50 symbol-light mr-1">
                                 <span class="symbol-label">
-                                    <img src="{{ asset('media/svg/misc/006-plurk.svg') }}" class="h-50 align-self-center"/>
+                                    <img src="{{ asset('vendor/nttps/metronic-laravel/media/svg/misc/006-plurk.svg') }}" class="h-50 align-self-center"/>
                                 </span>
                             </div>
                         </td>
@@ -71,13 +71,13 @@
                         </td>
                         <td class="text-right pr-0">
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm mx-3">
-                                {{ Metronic::getSVG("media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                         </td>
                     </tr>
@@ -85,7 +85,7 @@
                         <td class="pl-0 py-4">
                             <div class="symbol symbol-50 symbol-light">
                                 <span class="symbol-label">
-                                    <img src="{{ asset('media/svg/misc/015-telegram.svg') }}" class="h-50 align-self-center"/>
+                                    <img src="{{ asset('vendor/nttps/metronic-laravel/media/svg/misc/015-telegram.svg') }}" class="h-50 align-self-center"/>
                                 </span>
                             </div>
                         </td>
@@ -114,13 +114,13 @@
                         </td>
                         <td class="text-right pr-0">
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm mx-3">
-                                {{ Metronic::getSVG("media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                         </td>
                     </tr>
@@ -128,7 +128,7 @@
                         <td class="pl-0 py-4">
                             <div class="symbol symbol-50 symbol-light">
                                 <span class="symbol-label">
-                                    <img src="{{ asset('media/svg/misc/003-puzzle.svg') }}" class="h-50 align-self-center"/>
+                                    <img src="{{ asset('vendor/nttps/metronic-laravel/media/svg/misc/003-puzzle.svg') }}" class="h-50 align-self-center"/>
                                 </span>
                             </div>
                         </td>
@@ -157,13 +157,13 @@
                         </td>
                         <td class="text-right pr-0">
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm mx-3">
-                                {{ Metronic::getSVG("media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                         </td>
                     </tr>
@@ -171,7 +171,7 @@
                         <td class="pl-0 py-4">
                             <div class="symbol symbol-50 symbol-light">
                                 <span class="symbol-label">
-                                    <img src="{{ asset('media/svg/misc/005-bebo.svg') }}" class="h-50 align-self-center"/>
+                                    <img src="{{ asset('vendor/nttps/metronic-laravel/media/svg/misc/005-bebo.svg') }}" class="h-50 align-self-center"/>
                                 </span>
                             </div>
                         </td>
@@ -200,13 +200,13 @@
                         </td>
                         <td class="text-right pr-0">
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm mx-3">
-                                {{ Metronic::getSVG("media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                         </td>
                     </tr>
@@ -214,7 +214,7 @@
                         <td class="pl-0 py-4">
                             <div class="symbol symbol-50 symbol-light">
                                 <span class="symbol-label">
-                                    <img src="{{ asset('media/svg/misc/014-kickstarter.svg') }}" class="h-50 align-self-center"/>
+                                    <img src="{{ asset('vendor/nttps/metronic-laravel/media/svg/misc/014-kickstarter.svg') }}" class="h-50 align-self-center"/>
                                 </span>
                             </div>
                         </td>
@@ -243,13 +243,13 @@
                         </td>
                         <td class="text-right pr-0">
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm mx-3">
-                                {{ Metronic::getSVG("media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Write.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                             <a href="#" class="btn btn-icon btn-light btn-sm">
-                                {{ Metronic::getSVG("media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/General/Trash.svg", "svg-icon-md svg-icon-primary") }}
                             </a>
                         </td>
                     </tr>

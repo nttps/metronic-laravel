@@ -1,5 +1,5 @@
 <?php
-namespace Nttps\MetronicTheme\Theme;
+namespace Nttps\MetronicLaravel\Classes\Theme;
 
 class Metronic
 {
@@ -94,14 +94,14 @@ class Metronic
     {
         $themes = [];
 
-        $themes[] = 'vendor/metronic/css/themes/layout/header/base/'.config('layout.header.self.theme').'.css';
-        $themes[] = 'vendor/metronic/css/themes/layout/header/menu/'.config('layout.header.menu.desktop.submenu.theme').'.css';
-        $themes[] = 'vendor/metronic/css/themes/layout/aside/'.config('layout.aside.self.theme').'.css';
+        $themes[] = 'vendor/nttps/metronic-laravel/css/themes/layout/header/base/'.config('layout.header.self.theme').'.css';
+        $themes[] = 'vendor/nttps/metronic-laravel/css/themes/layout/header/menu/'.config('layout.header.menu.desktop.submenu.theme').'.css';
+        $themes[] = 'vendor/nttps/metronic-laravel/css/themes/layout/aside/'.config('layout.aside.self.theme').'.css';
 
         if (config('layout.aside.self.display')) {
-            $themes[] = 'vendor/metronic/css/themes/layout/brand/'.config('layout.brand.self.theme').'.css';
+            $themes[] = 'vendor/nttps/metronic-laravel/css/themes/layout/brand/'.config('layout.brand.self.theme').'.css';
         } else {
-            $themes[] = 'vendor/metronic/css/themes/layout/brand/'.config('layout.header.self.theme').'.css';
+            $themes[] = 'vendor/nttps/metronic-laravel/css/themes/layout/brand/'.config('layout.header.self.theme').'.css';
         }
 
         return $themes;

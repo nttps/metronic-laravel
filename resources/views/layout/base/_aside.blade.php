@@ -16,13 +16,13 @@
     <div class="brand flex-column-auto {{ Metronic::printClasses('brand', false) }}" id="kt_brand">
         <div class="brand-logo">
             <a href="{{ url('/') }}">
-                <img alt="{{ config('app.name') }}" src="{{ asset('vendor/metronic/media/logos/'.$kt_logo_image) }}"/>
+                <img alt="{{ config('app.name') }}" src="{{ asset('vendor/nttps/metronic-laravel/media/logos/'.$kt_logo_image) }}"/>
             </a>
         </div>
 
         @if (config('layout.aside.self.minimize.toggle'))
             <button class="brand-toggle btn btn-sm px-0" id="kt_aside_toggle">
-                {{ Metronic::getSVG("vendor/metronic/media/svg/icons/Navigation/Angle-double-left.svg", "svg-icon-xl") }}
+                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Navigation/Angle-double-left.svg", "svg-icon-xl") }}
             </button>
         @endif
 
@@ -34,7 +34,7 @@
         @if (config('layout.aside.self.display') === false)
             <div class="header-logo">
                 <a href="{{ url('/') }}">
-                    <img alt="{{ config('app.name') }}" src="{{ asset('vendor/metronic/media/logos/'.$kt_logo_image) }}"/>
+                    <img alt="{{ config('app.name') }}" src="{{ asset('vendor/nttps/metronic-laravel/media/logos/'.$kt_logo_image) }}"/>
                 </a>
             </div>
         @endif

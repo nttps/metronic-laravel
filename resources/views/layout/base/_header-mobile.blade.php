@@ -25,7 +25,7 @@
 
             @endif
 
-            <img alt="{{ config('app.name') }}" src="{{ asset('vendor/metronic/media/logos/'.$kt_logo_image) }}"/>
+            <img alt="{{ config('app.name') }}" src="{{ asset('vendor/nttps/metronic-laravel/media/logos/'.$kt_logo_image) }}"/>
         </a>
     </div>
     <div class="d-flex align-items-center">
@@ -39,7 +39,7 @@
         @endif
 
         <button class="btn btn-hover-text-primary p-0 ml-2" id="kt_header_mobile_topbar_toggle">
-            {{ Metronic::getSVG('vendor/metronic/media/svg/icons/General/User.svg', 'svg-icon-xl') }}
+            {{ Metronic::getSVG('vendor/nttps/metronic-laravel/media/svg/icons/General/User.svg', 'svg-icon-xl') }}
         </button>
 
     </div>

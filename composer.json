@@ -13,17 +13,17 @@
     },
     "autoload": {
         "psr-4": {
-            "Nttps\\MetronicTheme\\": "src"
+            "Nttps\\MetronicLaravel\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Nttps\\MetronicTheme\\MetronicServiceProvider"
+                "Nttps\\MetronicLaravel\\MetronicServiceProvider"
             ],
             "aliases": {
-                "Metronic": "Nttps\\MetronicTheme\\Theme\\Metronic",
-                "Menu": "Nttps\\MetronicTheme\\Theme\\Menu"
+                "Metronic": "Nttps\\MetronicLaravel\\Classes\\Theme\\Metronic",
+                "Menu": "Nttps\\MetronicLaravel\\Classes\\\\Theme\\Menu"
             }
         }
     }

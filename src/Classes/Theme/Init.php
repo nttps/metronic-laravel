@@ -1,7 +1,6 @@
 <?php
-namespace Nttps\MetronicTheme\Theme;
+namespace Nttps\MetronicLaravel\Classes\Theme;
 
-use Nttps\MetronicTheme\Theme\Metronic;
 
 class Init
 {

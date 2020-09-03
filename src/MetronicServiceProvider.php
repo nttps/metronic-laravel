@@ -1,8 +1,8 @@
 <?php
 
-namespace Nttps\MetronicTheme;
+namespace Nttps\MetronicLaravel;
 
-use Nttps\MetronicTheme\Theme\Init;
+use Nttps\MetronicLaravel\Classes\Theme\Init;
 use Illuminate\Support\ServiceProvider;
 
 class MetronicServiceProvider extends ServiceProvider
@@ -18,7 +18,7 @@ class MetronicServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__.'/../config/menu_aside.php', 'menu_aside');
         $this->mergeConfigFrom(__DIR__.'/../config/menu_header.php', 'menu_header');
 
-        $this->app->make('Nttps\MetronicTheme\Http\Controllers\PagesController');
+        $this->app->make('Nttps\MetronicLaravel\Http\Controllers\PagesController');
     }
 
     /**
@@ -30,9 +30,7 @@ class MetronicServiceProvider extends ServiceProvider
     {
         Init::run();
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'metronic');
-        $this->publishes([
-            __DIR__.'/../resources/views' => resource_path('views/vendor/metronic'),
-        ] , 'metronic_view');
+
         $this->loadRoutesFrom(__DIR__.'/../routes/metronic.php');
 
         $this->publishes([
@@ -42,7 +40,10 @@ class MetronicServiceProvider extends ServiceProvider
         ], 'metronic_config');
 
         $this->publishes([
-            __DIR__.'/../public' => public_path('vendor/metronic'),
+            __DIR__.'/../resources/views' => resource_path('views/vendor/nttps/metronic-laravel'),
+        ] , 'metronic_view');
+        $this->publishes([
+            __DIR__.'/../public' => public_path('vendor/nttps/metronic-laravel'),
         ], 'metronic_public');
 
     }

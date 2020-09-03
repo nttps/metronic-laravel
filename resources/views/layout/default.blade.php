@@ -25,7 +25,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
 
         {{-- Favicon --}}
-        <link rel="shortcut icon" href="{{ asset('media/logos/favicon.ico') }}" />
+        <link rel="shortcut icon" href="{{ asset('vendor/nttps/metronic-laravel/media/logos/favicon.ico') }}" />
 
         {{-- Fonts --}}
         {{ Metronic::getGoogleFontsInclude() }}

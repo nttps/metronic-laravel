@@ -1,6 +1,6 @@
 <?php
 
-namespace Nttps\MetronicTheme\Http\Controllers;
+namespace Nttps\MetronicLaravel\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;

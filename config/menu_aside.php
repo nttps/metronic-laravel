@@ -7,7 +7,7 @@ return [
         [
             'title' => 'Dashboard',
             'root' => true,
-            'icon' => 'vendor/metronic/media/svg/icons/Design/Layers.svg', // or can be 'flaticon-home' or any flaticon-*
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Design/Layers.svg', // or can be 'flaticon-home' or any flaticon-*
             'page' => '/',
             'new-tab' => false,
         ],
@@ -18,7 +18,7 @@ return [
         ],
         [
             'title' => 'Applications',
-            'icon' => 'vendor/metronic/media/svg/icons/Layout/Layout-4-blocks.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Layout/Layout-4-blocks.svg',
             'bullet' => 'line',
             'root' => true,
             'submenu' => [
@@ -243,7 +243,7 @@ return [
         ],
         [
             'title' => 'Pages',
-            'icon' => 'vendor/metronic/media/svg/icons/Shopping/Barcode-read.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Barcode-read.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -391,7 +391,7 @@ return [
         [
             'title' => 'Themes',
             'desc' => '',
-            'icon' => 'vendor/metronic/media/svg/icons/Design/Bucket.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Design/Bucket.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -408,7 +408,7 @@ return [
         [
             'title' => 'Subheaders',
             'desc' => '',
-            'icon' => 'vendor/metronic/media/svg/icons/Code/Compiling.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Code/Compiling.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -436,7 +436,7 @@ return [
         ],
         [
             'title' => 'General',
-            'icon' => 'vendor/metronic/media/svg/icons/General/Settings-1.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/General/Settings-1.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -469,7 +469,7 @@ return [
         [
             'title' => 'Builder',
             'root' => true,
-            'icon' => 'vendor/metronic/media/svg/icons/Home/Library.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Home/Library.svg',
             'page' => 'builder',
             'visible' => 'preview',
         ],
@@ -480,7 +480,7 @@ return [
         ],
         [
             'title' => 'Forms',
-            'icon' => 'vendor/metronic/media/svg/icons/Design/PenAndRuller.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Design/PenAndRuller.svg',
             'root' => true,
             'bullet' => 'dot',
             'submenu' => [
@@ -700,7 +700,7 @@ return [
         ],
         [
             'title' => 'KTDatatable',
-            'icon' => 'vendor/metronic/media/svg/icons/Layout/Layout-left-panel-2.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Layout/Layout-left-panel-2.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -816,7 +816,7 @@ return [
         ],
         [
             'title' => 'Datatables.net',
-            'icon' => 'vendor/metronic/media/svg/icons/Layout/Layout-horizontal.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Layout/Layout-horizontal.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -964,7 +964,7 @@ return [
         [
             'title' => 'File Upload',
             'desc' => '',
-            'icon' => 'vendor/metronic/media/svg/icons/Files/Upload.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Files/Upload.svg',
             'bullet' => 'dot',
             'submenu' => [
                 [
@@ -992,7 +992,7 @@ return [
         ],
         [
             'title' => 'Bootstrap',
-            'icon' => 'vendor/metronic/media/svg/icons/Shopping/Box2.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Shopping/Box2.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -1044,7 +1044,7 @@ return [
         ],
         [
             'title' => 'Custom',
-            'icon' => 'vendor/metronic/media/svg/icons/Files/Pictures1.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Files/Pictures1.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -1104,7 +1104,7 @@ return [
         ],
         [
             'title' => 'Cards',
-            'icon' => 'vendor/metronic/media/svg/icons/Layout/Layout-arrange.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Layout/Layout-arrange.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -1140,7 +1140,7 @@ return [
         ],
         [
             'title' => 'Widgets',
-            'icon' => 'vendor/metronic/media/svg/icons/Devices/Diagnostics.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Devices/Diagnostics.svg',
             'root' => true,
             'bullet' => 'dot',
             'submenu' => [
@@ -1184,7 +1184,7 @@ return [
         ],
         [
             'title' => 'Icons',
-            'icon' => 'vendor/metronic/media/svg/icons/General/Attachment2.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/General/Attachment2.svg',
             'bullet' => 'dot',
             'submenu' => [
                 [
@@ -1211,7 +1211,7 @@ return [
         ],
         [
             'title' => 'Calendar',
-            'icon' => 'vendor/metronic/media/svg/icons/Design/Select.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Design/Select.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [
@@ -1239,7 +1239,7 @@ return [
         ],
         [
             'title' => 'Charts',
-            'icon' => 'vendor/metronic/media/svg/icons/Media/Equalizer.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Media/Equalizer.svg',
             'root' => true,
             'bullet' => 'dot',
             'submenu' => [
@@ -1277,7 +1277,7 @@ return [
         ],
         [
             'title' => 'Maps',
-            'icon' => 'vendor/metronic/media/svg/icons/Home/Book-open.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Home/Book-open.svg',
             'root' => true,
             'bullet' => 'dot',
             'submenu' => [
@@ -1293,7 +1293,7 @@ return [
         ],
         [
             'title' => 'Miscellaneous',
-            'icon' => 'vendor/metronic/media/svg/icons/Home/Mirror.svg',
+            'icon' => 'vendor/nttps/metronic-laravel/media/svg/icons/Home/Mirror.svg',
             'bullet' => 'dot',
             'root' => true,
             'submenu' => [

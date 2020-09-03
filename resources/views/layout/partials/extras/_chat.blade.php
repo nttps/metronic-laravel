@@ -11,7 +11,7 @@
                         {{-- Dropdown Menu  --}}
                         <div class="dropdown dropdown-inline">
                             <button type="button" class="btn btn-clean btn-sm btn-icon btn-icon-md" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{ Metronic::getSVG("vendor/metronic/media/svg/icons/Communication/Add-user.svg", "svg-icon-lg") }}
+                                {{ Metronic::getSVG("vendor/nttps/metronic-laravel/media/svg/icons/Communication/Add-user.svg", "svg-icon-lg") }}
                             </button>
                             <div class="dropdown-menu p-0 m-0 dropdown-menu-right dropdown-menu-md">
                                 {{-- Navigation--}}
@@ -92,7 +92,7 @@
                             <div class="d-flex flex-column mb-5 align-items-start">
                                 <div class="d-flex align-items-center">
                                     <div class="symbol symbol-circle symbol-40 mr-3">
-                                        <img alt="Pic" src="{{ asset('vendor/metronic/media/users/300_12.jpg') }}"/>
+                                        <img alt="Pic" src="{{ asset('vendor/nttps/metronic-laravel/media/users/300_12.jpg') }}"/>
                                     </div>
                                     <div>
                                         <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
@@ -113,7 +113,7 @@
                                         <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">You</a>
                                     </div>
                                     <div class="symbol symbol-circle symbol-40 ml-3">
-                                        <img alt="Pic" src="{{ asset('vendor/metronic/media/users/300_21.jpg') }}"/>
+                                        <img alt="Pic" src="{{ asset('vendor/nttps/metronic-laravel/media/users/300_21.jpg') }}"/>
                                     </div>
                                 </div>
                                 <div class="mt-2 rounded p-5 bg-light-primary text-dark-50 font-weight-bold text-right max-w-400px">
@@ -126,7 +126,7 @@
                             <div class="d-flex flex-column mb-5 align-items-start">
                                 <div class="d-flex align-items-center">
                                     <div class="symbol symbol-circle symbol-40 mr-3">
-                                        <img alt="Pic" src="{{ asset('vendor/metronic/media/users/300_21.jpg') }}"/>
+                                        <img alt="Pic" src="{{ asset('vendor/nttps/metronic-laravel/media/users/300_21.jpg') }}"/>
                                     </div>
                                     <div>
                                         <a href="#" class="text-dark-75 text-hover-primary font-weight-bold font-size-h6">Matt Pears</a>
