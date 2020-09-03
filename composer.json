@@ -23,7 +23,7 @@
             ],
             "aliases": {
                 "Metronic": "Nttps\\MetronicLaravel\\Classes\\Theme\\Metronic",
-                "Menu": "Nttps\\MetronicLaravel\\Classes\\\\Theme\\Menu"
+                "Menu": "Nttps\\MetronicLaravel\\Classes\\Theme\\Menu"
             }
         }
     }
