@@ -39,14 +39,10 @@ class MetronicServiceProvider extends ServiceProvider
         ], 'metronic_config');
 
         $this->publishes([
-<<<<<<< HEAD
             __DIR__.'/../resources/views' => resource_path('views/vendor/nttps/metronic-laravel'),
         ] , 'metronic_view');
         $this->publishes([
             __DIR__.'/../public' => public_path('vendor/nttps/metronic-laravel'),
-=======
-            __DIR__.'/../public' => public_path('vendor/nttps/metronic-larvel'),
->>>>>>> a72680e1bd602549e2b7a63435f5696d03f5531a
         ], 'metronic_public');
 
     }
