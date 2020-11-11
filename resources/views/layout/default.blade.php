@@ -52,7 +52,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
         @include('metronic::layout.base._layout')
 
-        <script>var HOST_URL = "{{ route('quick-search') }}";</script>
+        <script>var HOST_URL = "";</script>
 
         {{-- Global Config (global config for global JS scripts) --}}
         <script>
